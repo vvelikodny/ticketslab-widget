@@ -18,25 +18,5 @@ a {
     @extend %clearfix;
 }
 
-.row {
-    margin-right: -(gridValue('gutter'));
-    margin-left: -(gridValue('gutter'));
-
-    @extend %clearfix;
-}
-
-.leftBlock {
-    float: left;
-    width: contentGrid('container', 'leftBlock', 'gutter');
-    padding: 0 gridValue('gutter');
-    text-align: center;
-}
-
-.rightBlock {
-    float: left;
-    width: contentGrid('container', 'rightBlock', 'gutter');
-    padding: 0 gridValue('gutter');
-    text-align: center;
-}
 
 /*END:base*/
