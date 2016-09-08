@@ -30,5 +30,8 @@
     "gulp-uglify": "^1.5.3",
     "gulp-useref": "^3.1.0",
     "psi": "^2.0.4"
+  },
+  "dependencies": {
+    "gulp-install": "^0.6.0"
   }
 }
