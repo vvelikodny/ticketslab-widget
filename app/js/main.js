@@ -1,6 +1,6 @@
 var startBtn = $('#startBtn');
 var startPopup = $('#startPopup');
-var defaultInputNumber = $('.default-input-number');
+var addTicketsInputNumber = $('#addTicketsInputNumber');
 
 $(document).ready(function() {
 	// startPopup
@@ -10,8 +10,9 @@ $(document).ready(function() {
 	});
 	// END:startPopup
 	// defaultInputNumber
-	defaultInputNumber.styler({
+	addTicketsInputNumber.styler({
 		
 	});
+	console.log(addTicketsInputNumber.val());
 	// END:defaultInputNumber
 });

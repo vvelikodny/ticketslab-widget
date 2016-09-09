@@ -94,6 +94,11 @@ body {
     display: none;
 }
 
+.popup-main__footer {
+    position: fixed;
+    bottom: 0;
+}
+
 .popup__overlay {
     display: block;
 }
