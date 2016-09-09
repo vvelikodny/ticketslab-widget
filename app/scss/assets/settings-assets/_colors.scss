@@ -1,5 +1,8 @@
-$colors: ( 
-    'primary': #fff
+$colors: (
+    'primary': #ffdb4d,
+    'primaryHover': #ffd633,
+    'disabledBg': #ececec,
+    'disabledColor': #8f8f8f
 );
 @function color($color) {
     @return map-get($colors, $color);

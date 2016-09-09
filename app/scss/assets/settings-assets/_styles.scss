@@ -27,3 +27,14 @@
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
 }
+
+%default-btn {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 32px;
+    background-color: color('primary');
+    &:hover,
+    &:focus {
+        background-color: color('primaryHover');
+    }
+}

@@ -7,11 +7,22 @@ a {
     transition: all .15s ease-in;
 }
 
-.myContainer:after,
-.row:after {
+.myContainer:after {
     display: block;
     clear: both;
     content: '';
+}
+
+.primary-btn {
+    font-size: 15px;
+    line-height: 32px;
+    display: inline-block;
+    background-color: #ffdb4d;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+    background-color: #ffd633;
 }
 
 
@@ -24,29 +35,21 @@ html {
     height: 100%;
 }
 
+body {
+    font-family: 'Arial,Helvetica,sans-serif';
+}
+
 .myContainer {
     position: relative;
     max-width: 1170px;
     margin: 0 auto;
 }
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.leftBlock {
-    float: left;
-    width: 66.66667%;
-    padding: 0 15px;
-    text-align: center;
-}
-
-.rightBlock {
-    float: left;
-    width: 33.33333%;
-    padding: 0 15px;
-    text-align: center;
+.primary-btn {
+    padding: 0 17.1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 
 

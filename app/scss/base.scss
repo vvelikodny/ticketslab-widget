@@ -10,6 +10,10 @@ a {
     @extend %default-transition;
 }
 
+body {
+    font-family: 'Arial,Helvetica,sans-serif';
+}
+
 .myContainer {
     position: relative;
     max-width: gridValue('container');
@@ -18,5 +22,11 @@ a {
     @extend %clearfix;
 }
 
+.primary-btn {
+    padding: 0px 17.1px;
+    border-radius: 3px;
+
+    @extend %default-btn;
+}
 
 /*END:base*/
