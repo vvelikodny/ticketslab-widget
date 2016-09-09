@@ -1,3 +1,4 @@
 var startBtn = $('#startBtn');
 var startPopup = $('#startPopup');
-var addTicketsInputNumber = $('#addTicketsInputNumber');
+var popupTicketsOfferNumber = $('input.popup-tickets__offer-number');
+

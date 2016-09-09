@@ -1,6 +1,6 @@
 var startBtn = $('#startBtn');
 var startPopup = $('#startPopup');
-var addTicketsInputNumber = $('#addTicketsInputNumber');
+var popupTicketsOfferNumber = $('input.popup-tickets__offer-number');
 
 $(document).ready(function() {
 	// startPopup
@@ -9,10 +9,7 @@ $(document).ready(function() {
 		startPopup.fadeIn(200);
 	});
 	// END:startPopup
-	// defaultInputNumber
-	addTicketsInputNumber.styler({
-		
-	});
-	console.log(addTicketsInputNumber.val());
-	// END:defaultInputNumber
+	// popupTicketsOfferNumber
+	popupTicketsOfferNumber.styler();
+	// END:popupTicketsOfferNumber
 });
