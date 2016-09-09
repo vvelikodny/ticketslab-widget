@@ -1,6 +1,7 @@
 @import 'assets/settings';
 
 /*popup-start*/
+
 body {
     font-family: sans-serif;
 }
@@ -17,19 +18,59 @@ body {
         font-size: 27px;
         font-weight: bold;
         line-height: 34px;
+        margin-bottom: 0;
         white-space: nowrap;
         color: #333;
     }
     &__address {
-    	display: inline-block;
-    	vertical-align: middle;
+        display: inline-block;
         overflow: hidden;
+        max-width: 200px;
         font-size: 13px;
         line-height: 23px;
-        white-space: nowrap;
         margin-right: 12px;
+        transition: all 0.55s ease;
+        vertical-align: middle;
+        white-space: nowrap;
         text-overflow: ellipsis;
         color: #8f8f8f;
+        &:hover {
+            max-width: 400px;
+        }
     }
 }
+
+.popup-tickets {
+    padding: 34px 32px;
+    &__title {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 27px;
+        margin: 0;
+        padding: 0;
+        color: #000;
+    }
+    &__subtitle {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 19px;
+        margin: 0;
+        padding: 3px 0 4px;
+        color: #888;
+    }
+    &__price {
+        font-family: sans-serif;
+        font-size: 18px;
+        white-space: nowrap;
+        word-spacing: -2px;
+    }
+    &__count {
+        font-size: 13px;
+        line-height: 19px;
+        white-space: nowrap;
+        color: #888;
+    }
+}
+
+
 /*END:popup-start*/
