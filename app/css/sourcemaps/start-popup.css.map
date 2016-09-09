@@ -1,1 +1,1 @@
-{"version":3,"sources":["start-popup.scss"],"names":[],"mappings":"AAEA,eAAe;AACf;EACI,mBAAmB,EACtB;;AACD,mBAAmB","file":"start-popup.css","sourcesContent":["@import 'assets/settings';\r\n\r\n/*start-popup*/\r\n.start-popup-block {\r\n    position: relative;\r\n}\r\n/*END:start-popup*/\r\n"],"sourceRoot":"/source/"}
+{"version":3,"sources":["start-popup.scss"],"names":[],"mappings":"AAEA,eAAe;AAEf,mBAAmB","file":"start-popup.css","sourcesContent":["@import 'assets/settings';\r\n\r\n/*popup-start*/\r\n\r\n/*END:popup-start*/\r\n"],"sourceRoot":"/source/"}

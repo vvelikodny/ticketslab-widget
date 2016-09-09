@@ -6,7 +6,8 @@ html {
     height: 100%;
 }
 
-a {
+a,
+button {
     @extend %default-transition;
 }
 
@@ -40,7 +41,7 @@ body {
         position: relative;
     }
     &__container {
-        position: absolute;
+        position: relative;
         top: 50%;
         left: 50%;
         z-index: 1;
@@ -53,8 +54,41 @@ body {
 
         @extend %translate-xy;
     }
+    &__table {
+        display: table;
+        width: 100%;
+        padding: 18px 32px;
+        &--bordered {
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+    &__row {
+        display: table-row;
+    }
+    &__cell {
+        display: table-cell;
+        &--left {
+            text-align: left;
+        }
+        &--center {
+            text-align: center;
+        }
+        &--right {
+            text-align: right;
+        }
+    }
     &__iframe {
         @extend %default-iframe-popup;
+    }
+    &__close-btn {
+        display: inline-block;
+        vertical-align: middle;
+        opacity: 0.4;
+        border: none;
+        background: none;
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 

@@ -26,6 +26,9 @@ gulp.task('scss', function() {
 		'../scss/sourcemaps'
 	))
 	.pipe(gulp.dest('app/css'))
+	.pipe(browserSync.reload({
+		stream: true
+	}));
 });
 
 gulp.task('js', function(){

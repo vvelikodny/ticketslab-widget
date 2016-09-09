@@ -1,7 +1,8 @@
 /*base*/
 
 .primary-btn,
-a {
+a,
+button {
     -webkit-transition: all .15s ease-in;
     -moz-transition: all .15s ease-in;
     -o-transition: all .15s ease-in;
@@ -102,7 +103,7 @@ body {
 }
 
 .popup__container {
-    position: absolute;
+    position: relative;
     z-index: 1;
     top: 50%;
     left: 50%;
@@ -112,6 +113,48 @@ body {
     height: 646px;
     padding: 0;
     background: #fff;
+}
+
+.popup__table {
+    display: table;
+    width: 100%;
+    padding: 18px 32px;
+}
+
+.popup__table--bordered {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.popup__row {
+    display: table-row;
+}
+
+.popup__cell {
+    display: table-cell;
+}
+
+.popup__cell--left {
+    text-align: left;
+}
+
+.popup__cell--center {
+    text-align: center;
+}
+
+.popup__cell--right {
+    text-align: right;
+}
+
+.popup__close-btn {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .4;
+    border: none;
+    background: none;
+}
+
+.popup__close-btn:hover {
+    opacity: 1;
 }
 
 

@@ -1,0 +1,38 @@
+/*popup-start*/
+
+body {
+    font-family: sans-serif;
+}
+
+.popup-start__date {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 29px;
+    margin-bottom: 0;
+    color: #666;
+}
+
+.popup-start__title {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 34px;
+    white-space: nowrap;
+    color: #333;
+}
+
+.popup-start__address {
+    font-size: 13px;
+    line-height: 23px;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 12px;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #8f8f8f;
+    -o-text-overflow: ellipsis;
+}
+
+
+/*END:popup-start*/
+/*# sourceMappingURL=sourcemaps/popup-start.css.map */

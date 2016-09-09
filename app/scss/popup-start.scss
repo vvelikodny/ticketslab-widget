@@ -1,0 +1,35 @@
+@import 'assets/settings';
+
+/*popup-start*/
+body {
+    font-family: sans-serif;
+}
+
+.popup-start {
+    &__date {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 29px;
+        margin-bottom: 0;
+        color: #666;
+    }
+    &__title {
+        font-size: 27px;
+        font-weight: bold;
+        line-height: 34px;
+        white-space: nowrap;
+        color: #333;
+    }
+    &__address {
+    	display: inline-block;
+    	vertical-align: middle;
+        overflow: hidden;
+        font-size: 13px;
+        line-height: 23px;
+        white-space: nowrap;
+        margin-right: 12px;
+        text-overflow: ellipsis;
+        color: #8f8f8f;
+    }
+}
+/*END:popup-start*/
