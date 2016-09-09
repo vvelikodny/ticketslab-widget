@@ -70,6 +70,75 @@ body {
         white-space: nowrap;
         color: #888;
     }
+    &__offer {
+        .default-input-number {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 31px;
+            padding: 0;
+            text-align: center;
+            vertical-align: middle;
+            border: none;
+            outline: none;
+        }
+        .jq-number {
+            padding: 0 38px;
+            &.focused {
+                .jq-number__field {
+                    border: none;
+                }
+            }
+        }
+        .jq-number__spin {
+            left: 0;
+            height: 32px;
+        }
+        .jq-number__spin.plus {
+            left: auto;
+            right: 0;
+        }
+        .jq-number__field {
+            width: 45px;
+            height: 31px;
+            border: none;
+        }
+        .jq-number__spin {
+            width: 38px;
+            height: 31px;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 3px;
+            background: none;
+            background-color: #fff;
+            box-shadow: none;
+            text-shadow: none;
+            &:before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 12px;
+                height: 2px;
+                margin-top: -1px;
+                margin-left: -6px;
+                content: '';
+                border: none;
+                background: #666;
+            }
+        }
+        .jq-number__spin.minus:after {
+            opacity: 0;
+        }
+        .jq-number__spin.plus:after {
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 12px;
+            margin-top: -6px;
+            margin-left: -1px;
+            border: none;
+            background: #666;
+        }
+    }
 }
 
 
