@@ -28,11 +28,17 @@
     -o-filter: grayscale(100%);
 }
 
+%translate-xy {
+    transform: translate(-50%, -50%);
+}
+
 %default-btn {
     display: inline-block;
     font-size: 15px;
     line-height: 32px;
     background-color: color('primary');
+
+    @extend %default-transition;
     &:hover,
     &:focus {
         background-color: color('primaryHover');
@@ -44,11 +50,23 @@
     top: 0px;
     left: 0px;
     z-index: 99999;
-    display: none;
+    display: block;
     width: 100%;
     height: 100%;
     margin-top: 0px;
     transition: opacity 0.3s ease-out 0s, top 0.3s ease-out 0s;
     opacity: 1;
     border: medium none;
+}
+
+%default-iframe-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+    display: none;
+    width: 100%;
+    height: 100%;
+    // padding: 0px 0px 100px;
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%;
 }

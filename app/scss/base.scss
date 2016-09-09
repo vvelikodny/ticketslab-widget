@@ -11,7 +11,7 @@ a {
 }
 
 body {
-    font-family: 'Arial,Helvetica,sans-serif';
+    font-family: 'Arial-MT, sans-serif';
 }
 
 .myContainer {
@@ -29,6 +29,34 @@ body {
     @extend %default-btn;
 }
 
+.popup {
+    display: none;
+
+    @extend %default-iframe-overlay;
+    &__overlay {
+        display: block;
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        display: block;
+        overflow: hidden;
+        width: 848px;
+        height: 646px;
+        padding: 0;
+        background: #fff;
+
+        @extend %translate-xy;
+    }
+    &__iframe {
+        @extend %default-iframe-popup;
+    }
+}
 
 
 /*END:base*/

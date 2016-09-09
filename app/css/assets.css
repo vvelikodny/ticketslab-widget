@@ -241,10 +241,10 @@ input[type='search']::-webkit-search-results-decoration {
 /*fonts*/
 
 @font-face {
-    font-family: 'OpenSans-Regular';
-    src: url('../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot');
+    font-family: 'Arial-MT';
+    src: url('../fonts/Arial/Arial-MT/Arial-MT.eot');
     /* IE9 Compat Modes */
-    src: url('../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.svg#svgFontName') format('svg');
+    src: url('../fonts/Arial/Arial-MT/Arial-MT.eot?#iefix') format('embedded-opentype'), url('../fonts/Arial/Arial-MT/Arial-MT.woff') format('woff'), url('../fonts/Arial/Arial-MT/Arial-MT.ttf') format('truetype'), url('../fonts/Arial/Arial-MT/Arial-MT.svg#svgFontName') format('svg');
     /* Legacy iOS */
 }
 
