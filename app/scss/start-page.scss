@@ -1,0 +1,21 @@
+@import 'assets/settings';
+
+/*start-page*/
+
+.start-popup-iframe {
+    @extend %default-iframe-popup;
+}
+
+.start-popup-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 100px;
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%;
+}
+
+/*END:start-page*/

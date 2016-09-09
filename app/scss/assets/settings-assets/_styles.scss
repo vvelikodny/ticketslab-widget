@@ -38,3 +38,17 @@
         background-color: color('primaryHover');
     }
 }
+
+%default-iframe-popup {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    transition: opacity 0.3s ease-out 0s, top 0.3s ease-out 0s;
+    opacity: 1;
+    border: medium none;
+}

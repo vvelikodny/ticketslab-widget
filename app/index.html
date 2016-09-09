@@ -8,7 +8,7 @@
     <!-- build:css css/bundle.css -->
     <link rel="stylesheet" href="./css/assets.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="./css/start-page.css">
     <!-- endbuild -->
 </head>
 
@@ -19,10 +19,14 @@
         </header>
         <main class="main main-desktop start-page">
             <!-- .btn-block -->
-            <div class="btn-block" style="margin: 70px 70px">
-                <button type="button" class="primary-btn">Купить билеты</button>
+            <div class="btn-block" style="margin: 50px 50px">
+                <button type="button" id="startBtn" class="primary-btn">Купить билеты</button>
             </div>
             <!-- END:.btn-block -->
+            <!-- .popupOverlay -->
+            <div id="popupOverlay" class="popup-overlay"></div>
+            <!-- END:.popupOverlay -->
+            <iframe src="start-popup.html" frameborder="0" class="start-popup-iframe"></iframe>
         </main>
     </div>
     <!-- END:wrapper -->
@@ -30,6 +34,7 @@
 
     </footer>
     <!-- build:js js/bundle.js -->
+    <script src="./js/jquery-2.2.4.js"></script>
     <script src="./js/main.js"></script>
     <!-- endbuild -->
     <!--[if lt IE 9]>
