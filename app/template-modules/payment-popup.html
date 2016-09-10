@@ -22,15 +22,22 @@
                 <div class="popup__row">
                     <!-- popup__cell -->
                     <div class="popup__cell">
-                        <h4 class="popup-payment__date">Сегодня, 20:00</h4>
-                        <h3 class="popup-payment__title">Танцы Минус</h3>
+                        <!-- popup-payment__subtitle -->
+                        <div class="popup-payment__subtitle">
+                            <span class="popup-payment__subtitle-text">1 билет</span>
+                            <!-- popup-payment__subtitle -->
+                            <div class="popup-payment__subtitle-price">
+                                <span class="popup-payment__subtitle-price-value">1320</span>
+                                <span class="popup-payment__subtitle-price-currency">Р</span>
+                            </div>
+                            <!-- END:popup-payment__subtitle -->
+                        </div>
+                        <!-- END:popup-payment__subtitle -->
+                        <h3 class="popup-payment__title">Оплата банковской картой</h3>
                     </div>
                     <!-- END:popup__cell -->
                     <!-- .popup__cell -->
                     <div class="popup__cell popup__cell--right">
-                        <!-- .popup-payment__address -->
-                        <div class="popup-payment__address">Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн</div>
-                        <!-- END:.popup-payment__address -->
                         <button type="button" id="startPopupCloseBtn" class="popup__close-btn">
                             <svg width="16" height="16" viewBox="0 0 16 16" class="icon">
                                 <g stroke="none" stroke-width="1" fill="none">
@@ -46,72 +53,85 @@
                 <!-- END:.popup__row -->
             </div>
             <!-- END:.popup-main__header -->
-            <!-- .popup-tickets -->
-            <div class="popup-tickets">
-                <!-- .popup-tickets__item -->
-                <div class="popup-tickets__item popup__table popup__table--bordered">
-                    <!-- .popup__row -->
-                    <div class="popup__row">
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__main">
-                            <h4 class="popup-tickets__title">Танцевальный партерТанцевальный партер Танцевальный партер Танцевальный партер Танцевальный партер</h4>
-                            <h5 class="popup-tickets__subtitle">Входной билет без мест</h5>
+            <!-- .payment-card -->
+            <div class="payment-card">
+                <!-- .payment-card__inner -->
+                <div class="payment-card__inner">
+                    <!-- .payment-card__form -->
+                    <form action="#" class="payment-card__form">
+                        <!-- .payment-card__front .payment-card__side -->
+                        <div class="payment-card__front payment-card__side">
+                            <!-- .payment-card__logos -->
+                            <div class="card-logos">
+                                <!-- .card-logos__inner -->
+                                <div class="card-logos__inner">
+                                    <span class="card-logos__logo card-logos__logo--mastercard"></span>
+                                    <span class="card-logos__logo card-logos__logo--visa"></span>
+                                </div>
+                                <!-- END:.card-logos__inner -->
+                            </div>
+                            <!-- END:.payment-card__logos -->
+                            <!-- .payment-card__number -->
+                            <div class="payment-card__number payment-card__element">
+                                <h6 class="payment-card__number-title">Номер карты</h6>
+                                <!-- .payment-card__number-fields -->
+                                <div class="payment-card__number-fields">
+                                    <div class="payment-card__field-wrapper">
+                                        <input type="text" class="payment-card__field"/>
+                                    </div>
+                                    <div class="payment-card__field-wrapper">
+                                        <input type="text" class="payment-card__field"/>
+                                    </div>
+                                    <div class="payment-card__field-wrapper">
+                                        <input type="text" class="payment-card__field"/>
+                                    </div>
+                                    <div class="payment-card__field-wrapper">
+                                        <input type="text" class="payment-card__field"/>
+                                    </div>
+                                </div>
+                                <!-- END:.payment-card__number-fields -->
+                            </div>
+                            <!-- END:.payment-card__number -->
+                            <!-- .payment-card__expires -->
+                            <div class="payment-card__expires payment-card__element">
+                                <!-- .payment-card__expires-inner -->
+                                <div class="payment-card__expires-inner">
+                                    <!-- payment-card__expires-label -->
+                                    <div class="payment-card__expires-label">
+                                        <span>Valid</span>
+                                        <br />
+                                        <span>Thru</span>
+                                    </div>
+                                    <!-- END:payment-card__expires-label -->
+                                    <!-- .payment-card__expires-date -->
+                                    <div class="payment-card__expires-date">
+                                        <input type="text" class="payment-card__expires-date-field" />
+                                        <span class="payment-card__expires-separator">/</span>
+                                        <input type="text" class="payment-card__expires-date-field" />
+                                    </div>
+                                    <!-- END:.payment-card__expires-date -->
+                                </div>
+                                <!-- END:.payment-card__expires-inner -->
+                            </div>
+                            <!-- END:.payment-card__expires -->
+                            <!-- .payment-card__owner -->
+                            <div class="payment-card__owner payment-card__element">
+                                <input type="text" class="payment-card__owner-field" placeholder="IVAN IVANOV" />
+                            </div>
+                            <!-- END:.payment-card__owner -->
                         </div>
-                        <!-- END:popup__cell -->
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__price popup__cell--right">
-                            <span class="popup-tickets__price-value">2000</span>
-                            <span class="popup-tickets__price-currency">P</span>
+                        <!-- END:.payment-card__back .payment-card__side -->
+                        <!-- .payment-card__back payment-card__side -->
+                        <div class="payment-card__back payment-card__side">
+                            <div class="payment-card__magnet-line"></div>
                         </div>
-                        <!-- END:popup__cell -->
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__count popup__cell--right">
-                            <span class="popup-tickets__count-value">34</span>
-                            <span class="popup-tickets__count-amount">билета</span>
-                        </div>
-                        <!-- END:popup__cell -->
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__offer popup__cell--right">
-                            <input type="number" name="addTicketsInputNumber" id="addTicketsInputNumber" class="popup-tickets__offer-number default-input-number" min="0" />
-                        </div>
-                        <!-- END:popup__cell -->
-                    </div>
-                    <!-- END:.popup__row -->
+                        <!-- END:.payment-card__back payment-card__side -->
+                    </form>
+                    <!-- END:.payment-card__form -->
                 </div>
-                <!-- END:.popup-tickets__item -->
-                <!-- .popup-tickets__item -->
-                <div class="popup-tickets__item popup__table popup__table--bordered">
-                    <!-- .popup__row -->
-                    <div class="popup__row">
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__main">
-                            <h4 class="popup-tickets__title">VIP входной</h4>
-                            <h5 class="popup-tickets__subtitle">Vip (третий этаж). свободная рассадка</h5>
-                        </div>
-                        <!-- END:popup__cell -->
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__price popup__cell--right">
-                            <span class="popup-tickets__price-value">15</span>
-                            <span class="popup-tickets__price-currency">P</span>
-                        </div>
-                        <!-- END:popup__cell -->
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__count popup__cell--right">
-                            <span class="popup-tickets__count-value">4545454545</span>
-                            <span class="popup-tickets__count-amount">билета</span>
-                        </div>
-                        <!-- END:popup__cell -->
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__offer popup__cell--right">
-                            <input type="number" name="addTicketsInputNumber" id="addTicketsInputNumber" class="popup-tickets__offer-number default-input-number" min="0" />
-                        </div>
-                        <!-- END:popup__cell -->
-                    </div>
-                    <!-- END:.popup__row -->
-                </div>
-                <!-- END:.popup-tickets__item -->
+                <!-- END:.payment-card__inner -->
             </div>
-            <!-- END:.popup-tickets -->
+            <!-- END:.payment-card -->
         </div>
         <!-- END:.popup-main__main-content -->
         <!-- .popup__footer -->

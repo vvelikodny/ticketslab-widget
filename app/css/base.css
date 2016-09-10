@@ -294,7 +294,8 @@ body {
     color: #999;
 }
 
-.popup__footer-phone:hover {
+.popup__footer-phone:hover,
+.popup__footer-phone:focus {
     color: #999;
 }
 

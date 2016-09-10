@@ -77,11 +77,241 @@
 
 /*END:animations*/
 
+.payment-card__field,
+.payment-card__expires-date-field,
+.payment-card__owner-field {
+    -webkit-transition: all .15s ease-in;
+    -moz-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+}
+
+.payment-card__form:after,
+.payment-card__expires:after,
+.card-logos:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.payment-card__field,
+.payment-card__expires-date-field,
+.payment-card__owner-field {
+    font-weight: lighter;
+    display: inline-block;
+    padding-left: 8px;
+    vertical-align: middle;
+    color: #000;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    background-color: #fff;
+}
+
+.payment-card__field:focus,
+.payment-card__expires-date-field:focus,
+.payment-card__owner-field:focus {
+    border-color: #e0be1a;
+    -webkit-box-shadow: 0 0 8px #ffde41;
+    -moz-box-shadow: 0 0 8px #ffde41;
+    box-shadow: 0 0 8px #ffde41;
+}
+
 
 /*popup-payment*/
 
 body {
     font-family: sans-serif;
+}
+
+.popup-payment__title {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.popup-payment__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.popup-payment__subtitle-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.popup-payment__subtitle-price {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.payment-card {
+    padding: 48px 0;
+}
+
+.payment-card__inner {
+    position: relative;
+    width: 520px;
+    margin: 0 auto;
+}
+
+.payment-card__side {
+    position: relative;
+    float: left;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.payment-card__front {
+    width: 388px;
+    margin-right: -50px;
+    padding: 25px 38px;
+    background: #f1f0ec;
+}
+
+.payment-card__back {
+    z-index: -1;
+    float: right;
+    width: 150px;
+    padding: 25px 0;
+    background: #dbdad4;
+}
+
+.payment-card__element {
+    margin-bottom: 17px;
+}
+
+.payment-card__element:last-child {
+    margin-bottom: 0;
+}
+
+.payment-card__number-title {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 27px;
+    display: block;
+    margin: 0 0 5px;
+    padding: 0;
+    color: #000;
+}
+
+.payment-card__number-fields {
+    margin-right: 14px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.payment-card__number-fields:last-child {
+    margin-right: 0;
+}
+
+.payment-card__field-wrapper {
+    display: inline-block;
+    width: 68px;
+    height: 36px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.payment-card__field-wrapper:last-child {
+    margin-right: 0;
+}
+
+.payment-card__field {
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+}
+
+.payment-card__expires-inner {
+    float: right;
+}
+
+.payment-card__expires-label {
+    font-size: 11px;
+    line-height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.payment-card__expires-date {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.payment-card__expires-date-field {
+    font-size: 18px;
+    display: inline-block;
+    width: 49px;
+    height: 36px;
+    vertical-align: middle;
+}
+
+.payment-card__expires-separator {
+    font-size: 18px;
+    line-height: 36px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #92918f;
+}
+
+.payment-card__owner-field {
+    display: block;
+    width: 100%;
+    height: 36px;
+}
+
+.payment-card__owner-field::-webkit-input-placeholder {
+    color: #767676;
+}
+
+.payment-card__owner-field::-moz-placeholder {
+    color: #767676;
+}
+
+.payment-card__owner-field:-moz-placeholder {
+    color: #767676;
+}
+
+.payment-card__owner-field:-ms-input-placeholder {
+    color: #767676;
+}
+
+.payment-card__magnet-line {
+    height: 24px;
+    margin-bottom: 24px;
+    padding-top: 28px;
+    background: #1f1f1f;
+}
+
+.card-logos__inner {
+    float: right;
+}
+
+.card-logos__logo {
+    display: inline-block;
+    height: 24px;
+    vertical-align: middle;
+    background-image: url('../img/base/card-logos.png');
+    background-repeat: no-repeat;
+}
+
+.card-logos__logo--mastercard {
+    width: 39px;
+    margin-right: 12px;
+    background-position: 0 0;
+}
+
+.card-logos__logo--visa {
+    width: 63px;
+    background-position: -51px 0;
 }
 
 

@@ -102,7 +102,8 @@ body {
             vertical-align: top;
             text-decoration: none;
             color: #999;
-            &:hover {
+            &:hover,
+            &:focus {
                 color: #999;
             }
         }

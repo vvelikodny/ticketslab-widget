@@ -6,4 +6,186 @@ body {
     font-family: sans-serif;
 }
 
-/*END:popup-payment*/hehea
+.popup-payment {
+    &__title {
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 34px;
+        margin-bottom: 0;
+        color: #000;
+    }
+    &__subtitle {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 8px;
+        color: #666;
+        &-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &-price {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+.payment-card {
+    padding: 48px 0;
+    &__inner {
+        position: relative;
+        width: 520px;
+        margin: 0 auto;
+    }
+    &__form {
+        @extend %clearfix;
+    }
+    &__side {
+        float: left;
+        position: relative;
+        border-radius: 6px;
+    }
+    &__front {
+        width: 388px;
+        padding: 25px 38px;
+        margin-right: -50px;
+        background: #f1f0ec;
+    }
+    &__back {
+    	width: 150px;
+    	z-index: -1;
+    	float: right;
+    	padding: 25px 0;
+        background: #dbdad4;
+    }
+    &__element {
+        margin-bottom: 17px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__number {
+        &-title {
+            display: block;
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 27px;
+            margin: 0 0 5px;
+            padding: 0;
+            color: #000;
+        }
+        &-fields {
+            margin-right: 14px;
+            text-align: right;
+            vertical-align: middle;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__field-wrapper {
+        display: inline-block;
+        width: 68px;
+        height: 36px;
+        margin-right: 8px;
+        vertical-align: middle;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__field {
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+
+        @extend %default-input;
+    }
+    &__expires {
+        @extend %clearfix;
+        &-inner {
+            float: right;
+        }
+        &-label {
+            display: inline-block;
+            font-size: 11px;
+            line-height: 18px;
+            margin-right: 5px;
+            vertical-align: middle;
+            text-transform: uppercase;
+            color: #333;
+        }
+        &-date {
+            display: inline-block;
+            vertical-align: middle;
+            &-field {
+                display: inline-block;
+                width: 49px;
+                height: 36px;
+                font-size: 18px;
+                vertical-align: middle;
+
+                @extend %default-input;
+            }
+        }
+        &-separator {
+            display: inline-block;
+            font-size: 18px;
+            line-height: 36px;
+            vertical-align: middle;
+            color: #92918f;
+        }
+    }
+    &__owner {
+        &-field {
+            display: block;
+            width: 100%;
+            height: 36px;
+
+            @extend %default-input;
+            &::-webkit-input-placeholder {
+                color: #767676;
+            }
+            &::-moz-placeholder {
+                color: #767676;
+            }
+            &:-moz-placeholder {
+                color: #767676;
+            }
+            &:-ms-input-placeholder {
+                color: #767676;
+            }
+        }
+    }
+    &__magnet-line {
+        height: 24px;
+        margin-bottom: 24px;
+        padding-top: 28px;
+        background: #1f1f1f;
+    }
+}
+
+
+
+.card-logos {
+    @extend %clearfix;
+    &__inner {
+        float: right;
+    }
+    &__logo {
+        display: inline-block;
+        height: 24px;
+        vertical-align: middle;
+        background-image: url('../img/base/card-logos.png');
+        background-repeat: no-repeat;
+        &--mastercard {
+            width: 39px;
+            margin-right: 12px;
+            background-position: 0 0;
+        }
+        &--visa {
+            width: 63px;
+            background-position: -51px 0;
+        }
+    }
+}
+/*END:popup-payment*/
