@@ -113,19 +113,34 @@
             <!-- END:.popup-tickets -->
         </div>
         <!-- END:.popup-main__main-content -->
-        <!-- .popup-main__footer -->
-        <div class="popup-main__footer popup__table popup__table--bordered">
-            <!-- .popup__row -->
-            <div class="popup__row">
+        <!-- .popup__footer -->
+        <div class="popup__footer popup__table popup__table--bordered-top">
+            <!-- .popup__row popup__footer-top -->
+            <div class="popup__row popup__footer-top">
                 <!-- .popup__cell popup__cell--right -->
                 <div class="popup__cell popup__cell--right">
-                    footer
+                    <div class="popup__footer-price">
+                        <span class="popup__footer-value">0</span>
+                        <span class="popup__footer-currency">Р</span>
+                    </div>
+                    <div class="popup__footer-btn">
+                        <button type="button" class="popup__footer-submit-btn disabled">Купить</button>
+                    </div>
                 </div>
                 <!-- END:.popup__cell popup__cell--right -->
             </div>
-            <!-- END:.popup__row -->
+            <!-- END:.popup__row popup__footer-top -->
+            <!-- .popup__row popup__footer-bottom -->
+            <div class="popup__row popup__footer-bottom">
+                <!-- .popup__cell -->
+                <div class="popup__cell popup__support-info">
+                    
+                </div>
+                <!-- END:.popup__cell -->
+            </div>
+            <!-- END:.popup__row popup__footer-bottom -->
         </div>
-        <!-- END:.popup-main__footer -->
+        <!-- END:.popup__footer -->
     </main>
     <!-- END:popup-main -->
     <script src="./js/jquery-2.2.4.js"></script>

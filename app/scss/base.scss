@@ -24,9 +24,6 @@ body {
 }
 
 .primary-btn {
-    padding: 0px 17.1px;
-    border-radius: 3px;
-
     @extend %default-btn;
 }
 
@@ -34,10 +31,27 @@ body {
     display: none;
 
     @extend %default-iframe-overlay;
-    &-main{
-        &__footer{
-            position: fixed;
-            bottom: 0;
+    &__footer {
+        position: fixed;
+        bottom: 0;
+        &-price {
+            display: inline-block;
+            font-size: 24px;
+            line-height: 28px;
+            margin-right: 35px;
+            vertical-align: middle;
+            color: #333;
+        }
+        &-btn {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &-submit-btn {
+            @extend %default-btn;
+        }
+        &__bottom {
+            color: #999;
+            background-color: color('popupFooterBottom');
         }
     }
     &__overlay {
@@ -66,6 +80,9 @@ body {
         padding: 18px 32px;
         &--bordered {
             border-bottom: 1px solid #e5e5e5;
+        }
+        &--bordered-top {
+            border-top: 1px solid #e5e5e5;
         }
     }
     &__row {

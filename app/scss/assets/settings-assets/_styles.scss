@@ -34,14 +34,27 @@
 
 %default-btn {
     display: inline-block;
+    min-width: 132px;
     font-size: 15px;
     line-height: 32px;
+    padding: 0px 17.1px;
+    border-radius: 3px;
     background-color: color('primary');
 
     @extend %default-transition;
     &:hover,
     &:focus {
         background-color: color('primaryHover');
+    }
+    &.disabled {
+        cursor: default;
+        color: color('disabledColor');
+        background-color: color('disabledBg');
+        &:hover,
+        &:focus {
+            color: color('disabledColor');
+            background-color: color('disabledBg');
+        }
     }
 }
 

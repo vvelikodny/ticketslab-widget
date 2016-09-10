@@ -2,7 +2,8 @@ $colors: (
     'primary': #ffdb4d,
     'primaryHover': #ffd633,
     'disabledBg': #ececec,
-    'disabledColor': #8f8f8f
+    'disabledColor': #8f8f8f,
+    'popupFooterBottom': #333
 );
 @function color($color) {
     @return map-get($colors, $color);
