@@ -2,6 +2,7 @@
 
 .primary-btn,
 .popup__footer-submit-btn,
+.confirm-block__btn,
 a,
 button {
     -webkit-transition: all .15s ease-in;
@@ -16,7 +17,8 @@ button {
     content: '';
 }
 
-.popup__container {
+.popup__container,
+.confirm-popup__inner {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -25,7 +27,8 @@ button {
 }
 
 .primary-btn,
-.popup__footer-submit-btn {
+.popup__footer-submit-btn,
+.confirm-block__btn {
     font-size: 15px;
     line-height: 32px;
     display: inline-block;
@@ -39,13 +42,16 @@ button {
 
 .primary-btn:hover,
 .popup__footer-submit-btn:hover,
+.confirm-block__btn:hover,
 .primary-btn:focus,
-.popup__footer-submit-btn:focus {
+.popup__footer-submit-btn:focus,
+.confirm-block__btn:focus {
     background-color: #ffd633;
 }
 
 .disabled.primary-btn,
-.disabled.popup__footer-submit-btn {
+.disabled.popup__footer-submit-btn,
+.disabled.confirm-block__btn {
     cursor: default;
     color: #8f8f8f;
     background-color: #ececec;
@@ -53,8 +59,10 @@ button {
 
 .disabled.primary-btn:hover,
 .disabled.popup__footer-submit-btn:hover,
+.disabled.confirm-block__btn:hover,
 .disabled.primary-btn:focus,
-.disabled.popup__footer-submit-btn:focus {
+.disabled.popup__footer-submit-btn:focus,
+.disabled.confirm-block__btn:focus {
     color: #8f8f8f;
     background-color: #ececec;
 }
@@ -219,6 +227,64 @@ body {
 
 .popup__close-btn:hover {
     opacity: 1;
+}
+
+.confirm-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+}
+
+.confirm-popup__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 32px 26px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.confirm-popup__icon-block {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.confirm-popup__title {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.confirm-popup__subtitle {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 6px 0 20px;
+    padding: 0;
+}
+
+.confirm-block__btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 2px 0;
+    color: #333;
+}
+
+.confirm-block__btn--close {
+    border: 1px solid #d7d6d5;
+    background-color: transparent;
+}
+
+.confirm-block__btn--close:hover {
+    border-color: #adacab;
+    background-color: transparent;
 }
 
 
