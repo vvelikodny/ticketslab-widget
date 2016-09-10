@@ -41,7 +41,9 @@ body {
 }
 
 .popup-tickets {
-    padding: 34px 32px;
+    &__item{
+        padding: 34px 32px;
+    }
     &__title {
         font-size: 18px;
         font-weight: normal;

@@ -43,7 +43,7 @@ body {
     max-width: 400px;
 }
 
-.popup-tickets {
+.popup-tickets__item {
     padding: 34px 32px;
 }
 
