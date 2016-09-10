@@ -31,29 +31,6 @@ body {
     display: none;
 
     @extend %default-iframe-overlay;
-    &__footer {
-        position: fixed;
-        bottom: 0;
-        &-price {
-            display: inline-block;
-            font-size: 24px;
-            line-height: 28px;
-            margin-right: 35px;
-            vertical-align: middle;
-            color: #333;
-        }
-        &-btn {
-            display: inline-block;
-            vertical-align: middle;
-        }
-        &-submit-btn {
-            @extend %default-btn;
-        }
-        &__bottom {
-            color: #999;
-            background-color: color('popupFooterBottom');
-        }
-    }
     &__overlay {
         display: block;
     }
@@ -102,6 +79,45 @@ body {
     }
     &__iframe {
         @extend %default-iframe-popup;
+    }
+    &__footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        &-price {
+            display: inline-block;
+            font-size: 24px;
+            line-height: 28px;
+            margin-right: 35px;
+            vertical-align: middle;
+            color: #333;
+        }
+        &-btn {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &-phone {
+            display: inline-block;
+            vertical-align: top;
+            text-decoration: none;
+            color: #999;
+            &:hover {
+                color: #999;
+            }
+        }
+        &-submit-btn {
+            @extend %default-btn;
+        }
+        &-bottom {
+            font-size: 13px;
+            padding: 9.5px 32px;
+            color: #999;
+            background-color: color('popupFooterBottom');
+        }
+    }
+    &__phone {
+        text-decoration: none;
     }
     &__close-btn {
         display: inline-block;
