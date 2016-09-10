@@ -291,6 +291,14 @@ body {
     background: #1f1f1f;
 }
 
+.payment-card__cvv-label {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #333;
+}
+
 .card-logos__inner {
     float: right;
 }
