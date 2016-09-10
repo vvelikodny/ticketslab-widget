@@ -3,6 +3,7 @@ var popup = $('.popup');
 var startPopup = $('#startPopup');
 var popupTicketsOfferNumber = $('input.popup-tickets__offer-number');
 var popupCloseBtn = $('.popup__close-btn');
+var confirmationPopupBtn = $('.confirm-block__btn');
 
 $(document).ready(function() {
 	// startPopup
@@ -27,4 +28,13 @@ $(document).ready(function() {
 	    }
 	});
 	// END:OPTIMIZE
+	// confirmationPopupBtn
+	confirmationPopupBtn.on('click', function(event) {
+	    if ($(event.target).hasClass('confirm-block__btn--submit')) {
+	        alert('submit');
+	    }
+	    event.preventDefault();
+	    $(this).parents('.confirm-popup').fadeOut(500);
+	});
+	// END:confirmationPopupBtn
 });

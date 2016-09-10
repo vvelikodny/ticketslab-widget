@@ -136,6 +136,7 @@ body {
     top: 0;
     left: 0;
     display: block;
+    z-index: 99999;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
@@ -181,7 +182,8 @@ body {
         &--close {
             border: 1px solid #d7d6d5;
             background-color: transparent;
-            &:hover {
+            &:hover,
+            &:focus {
                 border-color: #adacab;
                 background-color: transparent;
             }

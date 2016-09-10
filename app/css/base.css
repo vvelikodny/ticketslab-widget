@@ -69,7 +69,7 @@ button {
 
 .popup__iframe {
     position: absolute;
-    z-index: 99999;
+    z-index: 9999;
     top: 0;
     left: 0;
     display: block;
@@ -231,6 +231,7 @@ body {
 
 .confirm-popup {
     position: fixed;
+    z-index: 99999;
     top: 0;
     left: 0;
     display: block;
@@ -282,7 +283,8 @@ body {
     background-color: transparent;
 }
 
-.confirm-block__btn--close:hover {
+.confirm-block__btn--close:hover,
+.confirm-block__btn--close:focus {
     border-color: #adacab;
     background-color: transparent;
 }
