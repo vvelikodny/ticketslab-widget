@@ -5,6 +5,7 @@ var popupTicketsOfferNumber = $('input.popup-tickets__offer-number');
 var popupCloseBtn = $('.popup__close-btn');
 var confirmationPopupBtn = $('.confirm-block__btn');
 var popupFooterSubmitBtn = $('.popup__footer-submit-btn');
+var paymentCardTabField = $('.payment-card__tabfield');
 
 $(document).ready(function() {
 	// startPopup
@@ -71,6 +72,14 @@ $(document).ready(function() {
 	});
 	// END:confirmationPopupBtn
 	// paymentPopup
+	paymentCardTabField.on('input', function(event) {
+		var $this = $(this);
+		var inputVal = $this.val();
+		var maxlength = $this.prop('maxlength');
 	
+		if(inputVal.length === maxlength){
+			$this.nextAll('input').focus();
+		}
+	});
 	// END:paymentPopup
 });
