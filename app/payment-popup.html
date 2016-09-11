@@ -124,16 +124,30 @@
                         <!-- .payment-card__back payment-card__side -->
                         <div class="payment-card__back payment-card__side">
                             <div class="payment-card__magnet-line"></div>
-                            <!-- .payment-card__cvv -->
-                            <div class="payment-card__cvv">
-                                <!-- .payment-card__cvv-label -->
-                                <div class="payment-card__cvv-label">
-                                    cvc/cvv
-
+                            <!-- .payment-card__back-wrap -->
+                            <div class="payment-card__back-wrap">
+                                <!-- .payment-card__cvv -->
+                                <div class="payment-card__cvv">
+                                    <!-- .payment-card__cvv-label -->
+                                    <div class="payment-card__cvv-label">
+                                        <span class="payment-card__cvv-text">cvc/cvv</span>
+                                        <span class="info">?</span>
+                                    </div>
+                                    <!-- END:.payment-card__cvv-label -->
+                                    <!-- .payment-card__cvv-field-wrap -->
+                                    <div class="payment-card__cvv-field-wrap">
+                                        <input type="password" class="payment-card__cvv-field" />
+                                    </div>
+                                    <!-- END:.payment-card__cvv-field-wrap -->
+                                    <!-- .payment-card__cvv-note -->
+                                    <div class="payment-card__cvv-note">
+                                        Последние<br>три цифры на обороте<br>карты
+                                    </div>
+                                    <!-- END:.payment-card__cvv-note -->
                                 </div>
-                                <!-- END:.payment-card__cvv-label -->
+                                <!-- END:.payment-card__cvv -->
                             </div>
-                            <!-- END:.payment-card__cvv -->
+                            <!-- END:.payment-card__back-wrap -->
                         </div>
                         <!-- END:.payment-card__back payment-card__side -->
                     </form>
@@ -150,14 +164,24 @@
             <div class="popup__footer-top popup__table popup__table--bordered-top">
                 <!-- .popup__row -->
                 <div class="popup__row">
+                    <!-- .popup__cell -->
+                    <div class="popup__cell">
+                        <!-- .pay-timer -->
+                        <div class="pay-timer">
+                            <div class="pay-timer__time">10:25</div>
+                            <div class="pay-timer__text">
+                                <span>на оплату </span>
+                                <br>
+                                <span>заказа</span>
+                            </div>
+                        </div>
+                        <!-- END:.pay-timer -->
+                    </div>
+                    <!-- END:.popup__cell -->
                     <!-- .popup__cell popup__cell--right -->
                     <div class="popup__cell popup__cell--right">
-                        <div class="popup__footer-price">
-                            <span class="popup__footer-value">0</span>
-                            <span class="popup__footer-currency">Р</span>
-                        </div>
                         <div class="popup__footer-btn">
-                            <button type="button" class="popup__footer-submit-btn disabled">Купить</button>
+                            <button type="button" class="popup__footer-submit-btn disabled">Оплатить</button>
                         </div>
                     </div>
                     <!-- END:.popup__cell popup__cell--right -->

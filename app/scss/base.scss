@@ -237,4 +237,24 @@ body {
         }
     }
 }
+
+.info {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 17px;
+    margin: 1px 0 0 4px;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+    color: #fff;
+    border-radius: 100%;
+    background: #7b7972;
+}
+
 /*END:base*/

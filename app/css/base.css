@@ -437,6 +437,27 @@ body {
     border-radius: 100%;
 }
 
+.info {
+    font-size: 11px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 17px;
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 1px 0 0 4px;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+    color: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #7b7972;
+}
+
 
 /*END:base*/
 /*# sourceMappingURL=sourcemaps/base.css.map */

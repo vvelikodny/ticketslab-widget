@@ -79,7 +79,8 @@
 
 .payment-card__field,
 .payment-card__expires-date-field,
-.payment-card__owner-field {
+.payment-card__owner-field,
+.payment-card__cvv-field {
     -webkit-transition: all .15s ease-in;
     -moz-transition: all .15s ease-in;
     -o-transition: all .15s ease-in;
@@ -88,6 +89,7 @@
 
 .payment-card__form:after,
 .payment-card__expires:after,
+.pay-timer:after,
 .card-logos:after {
     display: block;
     clear: both;
@@ -96,7 +98,8 @@
 
 .payment-card__field,
 .payment-card__expires-date-field,
-.payment-card__owner-field {
+.payment-card__owner-field,
+.payment-card__cvv-field {
     font-weight: lighter;
     display: inline-block;
     padding-left: 8px;
@@ -109,7 +112,8 @@
 
 .payment-card__field:focus,
 .payment-card__expires-date-field:focus,
-.payment-card__owner-field:focus {
+.payment-card__owner-field:focus,
+.payment-card__cvv-field:focus {
     border-color: #e0be1a;
     -webkit-box-shadow: 0 0 8px #ffde41;
     -moz-box-shadow: 0 0 8px #ffde41;
@@ -155,18 +159,21 @@ body {
 .payment-card__inner {
     position: relative;
     width: 520px;
+    height: 238px;
     margin: 0 auto;
 }
 
 .payment-card__side {
     position: relative;
     float: left;
+    height: 238px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
 }
 
 .payment-card__front {
+    z-index: 1;
     width: 388px;
     margin-right: -50px;
     padding: 25px 38px;
@@ -174,7 +181,6 @@ body {
 }
 
 .payment-card__back {
-    z-index: -1;
     float: right;
     width: 150px;
     padding: 25px 0;
@@ -263,6 +269,7 @@ body {
 }
 
 .payment-card__owner-field {
+    font-size: 18px;
     display: block;
     width: 100%;
     height: 36px;
@@ -284,6 +291,11 @@ body {
     color: #767676;
 }
 
+.payment-card__back-wrap {
+    position: relative;
+    padding-left: 50px;
+}
+
 .payment-card__magnet-line {
     height: 24px;
     margin-bottom: 24px;
@@ -295,7 +307,42 @@ body {
     font-size: 11px;
     font-weight: 400;
     line-height: 21px;
+    margin-bottom: 3px;
     text-transform: uppercase;
+    color: #333;
+}
+
+.payment-card__cvv-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.payment-card__cvv-field {
+    font-size: 18px;
+    line-height: 36px;
+    width: 77px;
+    height: 36px;
+    margin-bottom: 6px;
+}
+
+.payment-card__cvv-note {
+    font-size: 11px;
+    line-height: 15px;
+    color: #777;
+}
+
+.pay-timer__time {
+    font-size: 27px;
+    display: block;
+    float: left;
+    width: 70px;
+    margin-right: 5px;
+    color: #333;
+}
+
+.pay-timer__text {
+    font-size: 11px;
+    line-height: 13px;
     color: #333;
 }
 

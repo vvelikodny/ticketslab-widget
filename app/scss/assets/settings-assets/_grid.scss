@@ -1,5 +1,7 @@
 $grid: ( 
     'container': 1170px,
+    'cardWidth': 520px,
+    'cardHeight': 238px
 );
 
 @function gridValue($width) {
