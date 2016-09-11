@@ -14,7 +14,27 @@ $(document).ready(function() {
 	});
 	// END:startPopup
 	// popupTicketsOfferNumber
-	popupTicketsOfferNumber.styler();
+	popupTicketsOfferNumber.styler({
+	    onFormStyled: function() {
+	        var popupTicketsOffer = $('.popup-tickets__offer');
+	        var popupTicketsOfferBtn = popupTicketsOffer.find('.jq-number__spin');
+	        var popupTicketsOfferMinusBtn = popupTicketsOffer.find('.jq-number__spin.minus');
+	
+	        popupTicketsOfferMinusBtn.addClass('disabled');
+	
+	        $('.jq-number__spin').on('click', function(event) {
+	            var $this = $(this);
+	            var numberParent = $this.parents('.popup-tickets__offer-number');
+	            var minusBtn = numberParent.find('.minus');
+	
+	            if (numberParent.find('input').val() > 0) {
+	                minusBtn.removeClass('disabled');
+	            } else {
+	                minusBtn.addClass('disabled');
+	            }
+	        });
+	    }
+	});
 	// END:popupTicketsOfferNumber
 	// popupCloseBtn
 	popupCloseBtn.on('click', function(event) {
@@ -23,7 +43,7 @@ $(document).ready(function() {
 	});
 	// OPTIMIZE
 	// close startPopup when clicking outside the popup__container
-	$(document).mouseup(function(event) {
+	$('body').mouseup(function(event) {
 	    if ($('.popup__iframe').has(event.target).length === 0) {
 	    	$('.popup').fadeOut(500);
 	    }

@@ -5,7 +5,7 @@ popupCloseBtn.on('click', function(event) {
 });
 // OPTIMIZE
 // close startPopup when clicking outside the popup__container
-$(document).mouseup(function(event) {
+$('body').mouseup(function(event) {
     if ($('.popup__iframe').has(event.target).length === 0) {
     	$('.popup').fadeOut(500);
     }

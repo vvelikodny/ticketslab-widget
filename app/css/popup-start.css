@@ -232,7 +232,7 @@ body {
     margin-left: -6px;
     content: '';
     border: none;
-    background: #666;
+    background-color: #666;
 }
 
 .popup-tickets__offer .jq-number__spin.minus:after {
@@ -248,6 +248,11 @@ body {
     margin-left: -1px;
     border: none;
     background: #666;
+}
+
+.popup-tickets__offer .jq-number__spin.disabled:before,
+.popup-tickets__offer .jq-number__spin.disabled:after {
+    background-color: #d6d6d6;
 }
 
 

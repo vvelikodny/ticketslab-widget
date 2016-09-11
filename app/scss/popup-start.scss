@@ -41,7 +41,7 @@ body {
 }
 
 .popup-tickets {
-    &__item{
+    &__item {
         padding: 34px 32px;
     }
     &__title {
@@ -60,22 +60,22 @@ body {
         padding: 3px 0 4px;
         color: #888;
     }
-    &__main{
+    &__main {
         width: 45%;
     }
     &__price {
         width: 20%;
-        padding-left: 20px;
         font-family: sans-serif;
         font-size: 18px;
+        padding-left: 20px;
         white-space: nowrap;
         word-spacing: -2px;
     }
     &__count {
         width: 15%;
-        padding-left: 30px;
         font-size: 13px;
         line-height: 19px;
+        padding-left: 30px;
         color: #888;
     }
     &__offer {
@@ -116,7 +116,7 @@ body {
         .jq-number__spin {
             width: 38px;
             height: 31px;
-            border: 1px solid rgba(0,0,0,0.2);
+            border: 1px solid rgba(0, 0, 0, 0.2);
             border-radius: 3px;
             background: none;
             background-color: #fff;
@@ -132,21 +132,31 @@ body {
                 margin-left: -6px;
                 content: '';
                 border: none;
-                background: #666;
+                background-color: #666;
             }
-        }
-        .jq-number__spin.minus:after {
-            opacity: 0;
-        }
-        .jq-number__spin.plus:after {
-            top: 50%;
-            left: 50%;
-            width: 2px;
-            height: 12px;
-            margin-top: -6px;
-            margin-left: -1px;
-            border: none;
-            background: #666;
+            &.minus {
+                &:after {
+                    opacity: 0;
+                }
+            }
+            &.plus {
+                &:after {
+                    top: 50%;
+                    left: 50%;
+                    width: 2px;
+                    height: 12px;
+                    margin-top: -6px;
+                    margin-left: -1px;
+                    border: none;
+                    background: #666;
+                }
+            }
+            &.disabled {
+                &:before,
+                &:after {
+                    background-color: #d6d6d6;
+                }
+            }
         }
     }
 }
