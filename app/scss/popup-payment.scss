@@ -138,6 +138,7 @@ body {
         }
     }
     &__owner {
+        position: relative;
         &-field {
             display: block;
             width: 100%;
@@ -156,6 +157,33 @@ body {
             }
             &:-ms-input-placeholder {
                 color: #767676;
+            }
+        }
+        &-tooltip {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            z-index: 2;
+            // display: none;
+            font-size: 13px;
+            line-height: 18px;
+            margin: 0;
+            padding: 7px 14px;
+            white-space: nowrap;
+            color: #fff;
+            background: color('warning');
+            &:after {
+                position: absolute;
+                top: 100%;
+                left: 16px;
+                display: block;
+                overflow: hidden;
+                width: 0;
+                height: 0;
+                content: '';
+                border: 5px solid transparent;
+                border-width: 5px 5px 0;
+                border-top-color: color('warning');
             }
         }
     }

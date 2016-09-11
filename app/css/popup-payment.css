@@ -166,7 +166,7 @@ body {
 .payment-card__side {
     position: relative;
     float: left;
-    height: 238px;
+    height: 248px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -268,6 +268,10 @@ body {
     color: #92918f;
 }
 
+.payment-card__owner {
+    position: relative;
+}
+
 .payment-card__owner-field {
     font-size: 18px;
     display: block;
@@ -289,6 +293,34 @@ body {
 
 .payment-card__owner-field:-ms-input-placeholder {
     color: #767676;
+}
+
+.payment-card__owner-tooltip {
+    font-size: 13px;
+    line-height: 18px;
+    position: absolute;
+    z-index: 2;
+    top: -40px;
+    left: 0;
+    margin: 0;
+    padding: 7px 14px;
+    white-space: nowrap;
+    color: #fff;
+    background: #f0ad4e;
+}
+
+.payment-card__owner-tooltip:after {
+    position: absolute;
+    top: 100%;
+    left: 16px;
+    display: block;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 5px solid transparent;
+    border-width: 5px 5px 0;
+    border-top-color: #f0ad4e;
 }
 
 .payment-card__back-wrap {
