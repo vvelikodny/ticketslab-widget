@@ -77,6 +77,15 @@
 
 /*END:animations*/
 
+.popup-tickets__offer .jq-number__spin,
+.popup-tickets__offer .jq-number__spin:before,
+.popup-tickets__offer .jq-number__spin.plus:after {
+    -webkit-transition: all .15s ease-in;
+    -moz-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+}
+
 
 /*popup-start*/
 
@@ -205,6 +214,9 @@ body {
     width: 45px;
     height: 31px;
     border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 .popup-tickets__offer .jq-number__spin {

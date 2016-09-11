@@ -4,6 +4,7 @@ var startPopup = $('#startPopup');
 var popupTicketsOfferNumber = $('input.popup-tickets__offer-number');
 var popupCloseBtn = $('.popup__close-btn');
 var confirmationPopupBtn = $('.confirm-block__btn');
+var popupFooterSubmitBtn = $('.popup__footer-submit-btn');
 
 $(document).ready(function() {
 	// startPopup
@@ -13,6 +14,20 @@ $(document).ready(function() {
 		$('.popup').fadeIn(200);
 	});
 	// END:startPopup
+	// popupFooterSubmitCheck
+	function popupFooterSubmitCheck(btn, fields) {
+	    this.btn = btn;
+	    this.fields = fields;
+	    fields.each(function(index, el) {
+	        if ($(this).hasClass('disabled')) {
+	            btn.addClass('disabled');
+	        } else {
+	            btn.removeClass('disabled');
+	        }
+	    });
+	}
+	// END:popupFooterSubmitCheck
+	
 	// popupTicketsOfferNumber
 	popupTicketsOfferNumber.styler({
 	    onFormStyled: function() {
@@ -32,6 +47,7 @@ $(document).ready(function() {
 	            } else {
 	                minusBtn.addClass('disabled');
 	            }
+	            popupFooterSubmitCheck(popupFooterSubmitBtn, popupTicketsOfferMinusBtn);
 	        });
 	    }
 	});

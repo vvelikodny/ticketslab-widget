@@ -112,6 +112,7 @@ body {
             width: 45px;
             height: 31px;
             border: none;
+            box-shadow: none;
         }
         .jq-number__spin {
             width: 38px;
@@ -122,6 +123,8 @@ body {
             background-color: #fff;
             box-shadow: none;
             text-shadow: none;
+
+            @extend %default-transition;
             &:before {
                 position: absolute;
                 top: 50%;
@@ -133,6 +136,8 @@ body {
                 content: '';
                 border: none;
                 background-color: #666;
+
+                @extend %default-transition;
             }
             &.minus {
                 &:after {
@@ -149,6 +154,8 @@ body {
                     margin-left: -1px;
                     border: none;
                     background: #666;
+
+                    @extend %default-transition;
                 }
             }
             &.disabled {

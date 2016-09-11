@@ -1,3 +1,17 @@
+// popupFooterSubmitCheck
+function popupFooterSubmitCheck(btn, fields) {
+    this.btn = btn;
+    this.fields = fields;
+    fields.each(function(index, el) {
+        if ($(this).hasClass('disabled')) {
+            btn.addClass('disabled');
+        } else {
+            btn.removeClass('disabled');
+        }
+    });
+}
+// END:popupFooterSubmitCheck
+
 // popupTicketsOfferNumber
 popupTicketsOfferNumber.styler({
     onFormStyled: function() {
@@ -17,6 +31,7 @@ popupTicketsOfferNumber.styler({
             } else {
                 minusBtn.addClass('disabled');
             }
+            popupFooterSubmitCheck(popupFooterSubmitBtn, popupTicketsOfferMinusBtn);
         });
     }
 });
