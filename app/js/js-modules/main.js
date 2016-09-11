@@ -5,4 +5,5 @@ $(document).ready(function() {
 	//= js-assets/popupTicketsOfferNumber
 	//= js-assets/popupCloseBtn
 	//= js-assets/confirmationPopupBtn
+	//= js-assets/paymentPopup
 });

@@ -70,4 +70,7 @@ $(document).ready(function() {
 	    $(this).parents('.confirm-popup').fadeOut(500);
 	});
 	// END:confirmationPopupBtn
+	// paymentPopup
+	
+	// END:paymentPopup
 });
