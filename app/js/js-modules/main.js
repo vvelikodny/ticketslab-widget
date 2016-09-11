@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 	//= js-assets/startPopup
-	//= js-assets/defaultInputNumber
+	//= js-assets/popupTicketsOfferNumber
 	//= js-assets/popupCloseBtn
 	//= js-assets/confirmationPopupBtn
 });
