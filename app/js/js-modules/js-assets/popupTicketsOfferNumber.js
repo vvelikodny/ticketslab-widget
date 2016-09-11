@@ -1,12 +1,13 @@
 // popupFooterSubmitCheck
 function popupFooterSubmitCheck(btn, fields) {
-    this.btn = btn;
-    this.fields = fields;
+    $(this).btn = btn;
+    $(this).fields = fields;
     fields.each(function(index, el) {
-        if ($(this).hasClass('disabled')) {
-            btn.addClass('disabled');
+        if ($(el).hasClass('active')) {
+            btn.removeClass('disabled').addClass('active');
+            console.log('submit is active!');
         } else {
-            btn.removeClass('disabled');
+            btn.removeClass('active').addClass('disabled');
         }
     });
 }
@@ -27,9 +28,9 @@ popupTicketsOfferNumber.styler({
             var minusBtn = numberParent.find('.minus');
 
             if (numberParent.find('input').val() > 0) {
-                minusBtn.removeClass('disabled');
+                minusBtn.addClass('active').removeClass('disabled');
             } else {
-                minusBtn.addClass('disabled');
+                minusBtn.addClass('disabled').removeClass('active');
             }
             popupFooterSubmitCheck(popupFooterSubmitBtn, popupTicketsOfferMinusBtn);
         });
