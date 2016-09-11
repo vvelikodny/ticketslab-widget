@@ -262,6 +262,10 @@ body {
     background: #666;
 }
 
+.popup-tickets__offer .jq-number__spin.disabled {
+    cursor: default;
+}
+
 .popup-tickets__offer .jq-number__spin.disabled:before,
 .popup-tickets__offer .jq-number__spin.disabled:after {
     background-color: #d6d6d6;

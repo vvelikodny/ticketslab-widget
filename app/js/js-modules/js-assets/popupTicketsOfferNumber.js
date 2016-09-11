@@ -22,7 +22,7 @@ popupTicketsOfferNumber.styler({
 
         popupTicketsOfferMinusBtn.addClass('disabled');
 
-        $('.jq-number__spin').on('click', function(event) {
+        popupTicketsOfferBtn.on('click', function(event) {
             var $this = $(this);
             var numberParent = $this.parents('.popup-tickets__offer-number');
             var minusBtn = numberParent.find('.minus');

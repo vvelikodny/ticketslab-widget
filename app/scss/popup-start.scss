@@ -159,6 +159,7 @@ body {
                 }
             }
             &.disabled {
+                cursor: default;
                 &:before,
                 &:after {
                     background-color: #d6d6d6;
