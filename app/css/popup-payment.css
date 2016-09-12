@@ -399,19 +399,22 @@ body {
     display: inline-block;
     height: 24px;
     vertical-align: middle;
-    background-image: url('../img/base/card-logos.png');
     background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 .card-logos__logo--mastercard {
     width: 39px;
     margin-right: 12px;
-    background-position: 0 0;
+    background-image: url('../img/base/card-logos/mastercard.svg');
 }
 
 .card-logos__logo--visa {
     width: 63px;
-    background-position: -51px 0;
+    background-image: url('../img/base/card-logos/visa.svg');
 }
 
 

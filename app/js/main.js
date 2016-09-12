@@ -16,7 +16,7 @@ $(document).ready(function() {
 	var popupTicketsDynamicHeight = windowHeight * 0.34527687296416937;
 	
 	popup.find('.popup__container').height(popupDynamicHeight);
-	popup.find('iframe').contentWindow.document.find('.popup-tickets').height(popupTicketsDynamicHeight);
+	// $('.popup-tickets').height(popupTicketsDynamicHeight);
 	// console.log(popupDynamicHeight);
 	// END:dynamicPopupHeight
 	// startPopup
