@@ -189,6 +189,10 @@ input {
     -webkit-appearance: none;
 }
 
+input::-ms-clear {
+    display: none;
+}
+
 input,
 textarea,
 button,

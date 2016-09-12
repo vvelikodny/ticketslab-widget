@@ -70,14 +70,26 @@
 %default-input {
     display: inline-block;
     font-weight: lighter;
-    vertical-align: middle;
     padding-left: 8px;
+    vertical-align: middle;
     color: #000;
     border: 1px solid #c9c9c9;
     outline: none;
     background-color: #fff;
 
     @extend %default-transition;
+    &::-webkit-input-placeholder {
+        color: #767676;
+    }
+    &::-moz-placeholder {
+        color: #767676;
+    }
+    &:-moz-placeholder {
+        color: #767676;
+    }
+    &:-ms-input-placeholder {
+        color: #767676;
+    }
     &:focus {
         border-color: #e0be1a;
         box-shadow: 0 0 8px #ffde41;

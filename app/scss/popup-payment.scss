@@ -146,18 +146,6 @@ body {
             font-size: 18px;
 
             @extend %default-input;
-            &::-webkit-input-placeholder {
-                color: #767676;
-            }
-            &::-moz-placeholder {
-                color: #767676;
-            }
-            &:-moz-placeholder {
-                color: #767676;
-            }
-            &:-ms-input-placeholder {
-                color: #767676;
-            }
         }
         &-tooltip {
             position: absolute;
