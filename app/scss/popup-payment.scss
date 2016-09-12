@@ -164,7 +164,7 @@ body {
             top: -40px;
             left: 0;
             z-index: 2;
-            // display: none;
+            display: none;
             font-size: 13px;
             line-height: 18px;
             margin: 0;
@@ -244,8 +244,6 @@ body {
     }
 }
 
-
-
 .card-logos {
     @extend %clearfix;
     &__inner {
@@ -268,4 +266,6 @@ body {
         }
     }
 }
+
+
 /*END:popup-payment*/

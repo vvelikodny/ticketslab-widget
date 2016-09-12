@@ -302,6 +302,7 @@ body {
     z-index: 2;
     top: -40px;
     left: 0;
+    display: none;
     margin: 0;
     padding: 7px 14px;
     white-space: nowrap;
