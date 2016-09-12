@@ -252,6 +252,14 @@ input[type='search']::-webkit-search-results-decoration {
     /* Legacy iOS */
 }
 
+@font-face {
+    font-family: 'rouble';
+    src: url('../fonts/rouble/rouble.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/rouble/rouble.eot?#iefix') format('embedded-opentype'), url('../fonts/rouble/rouble.woff') format('woff'), url('../fonts/rouble/rouble.ttf') format('truetype'), url('../fonts/rouble/rouble.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
 
 /*END:fonts*/
 /*# sourceMappingURL=sourcemaps/assets.css.map */

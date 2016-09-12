@@ -207,6 +207,10 @@ body {
     margin: 0 auto;
 }
 
+.rouble {
+    font-family: 'rouble';
+}
+
 .popup {
     display: none;
 }
