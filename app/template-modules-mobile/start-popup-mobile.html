@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Start Popup Mobile</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/base/favicon.ico" />
+    <!-- vendor -->
+    <link rel="stylesheet" href="./vendor/jquery.formstyler/jquery.formstyler.css">
+    <!-- END:vendor -->
+    <link rel="stylesheet" href="./css/assets.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/popup-start.css">
+</head>
+
+<body>
+    <!-- popup-main -->
+    <main class="main popup-main popup-start">
+        <!-- .popup-main__main-content -->
+        <div class="popup-main__main-content">
+            <!-- .popup-main__header -->
+            <div class="popup-main__header popup__table popup__table--bordered">
+                <!-- .popup__row -->
+                <div class="popup__row">
+                    <!-- popup__cell -->
+                    <div class="popup__cell">
+                        <h4 class="popup-start__date">Сегодня, 20:00</h4>
+                        <h3 class="popup-start__title">Танцы Минус</h3>
+                    </div>
+                    <!-- END:popup__cell -->
+                    <!-- .popup__cell -->
+                    <div class="popup__cell popup__cell--right">
+                        <!-- .popup-start__address -->
+                        <div class="popup-start__address">Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн Москва, 16 тонн</div>
+                        <!-- END:.popup-start__address -->
+                        <button type="button" id="startPopupCloseBtn" class="popup__close-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" class="icon">
+                                <g stroke="none" stroke-width="1" fill="none">
+                                    <g transform="translate(-16.000000, -16.000000)" fill="#000000">
+                                        <path d="M17.4545455,16 L16,17.4545455 L22.5454545,24 L16,30.5454545 L17.4545455,32 L24,25.4545455 L30.5454545,32 L32,30.5454545 L25.4545455,24 L32,17.4545455 L30.5454545,16 L24,22.5454545 L17.4545455,16 Z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- END:.popup__cell -->
+                </div>
+                <!-- END:.popup__row -->
+            </div>
+            <!-- END:.popup-main__header -->
+            <!-- .popup-tickets -->
+            <div class="popup-tickets popup__dynamic-area">
+                <!-- .popup-tickets__item -->
+                <div class="popup-tickets__item popup__table popup__table--bordered">
+                    <!-- .popup__row -->
+                    <div class="popup__row">
+                        <!-- popup__cell -->
+                        <div class="popup__cell popup-tickets__main">
+                            <h4 class="popup-tickets__title">Танцевальный партерТанцевальный партер Танцевальный партер Танцевальный партер Танцевальный партер</h4>
+                            <h5 class="popup-tickets__subtitle">Входной билет без мест</h5>
+                        </div>
+                        <!-- END:popup__cell -->
+                        <!-- popup__cell -->
+                        <div class="popup__cell popup-tickets__price popup__cell--right">
+                            <span class="popup-tickets__price-value">2000</span>
+                            <span class="popup-tickets__price-currency rouble">Р</span>
+                        </div>
+                        <!-- END:popup__cell -->
+                        <!-- popup__cell -->
+                        <div class="popup__cell popup-tickets__count popup__cell--right">
+                            <span class="popup-tickets__count-value">34</span>
+                            <span class="popup-tickets__count-amount">билета</span>
+                        </div>
+                        <!-- END:popup__cell -->
+                        <!-- popup__cell -->
+                        <div class="popup__cell popup-tickets__offer popup__cell--right">
+                            <input type="number" name="addTicketsInputNumber" id="addTicketsInputNumber" class="popup-tickets__offer-number default-input-number" readonly min="0" value="0" />
+                        </div>
+                        <!-- END:popup__cell -->
+                    </div>
+                    <!-- END:.popup__row -->
+                </div>
+                <!-- END:.popup-tickets__item -->
+                <!-- .popup-tickets__item -->
+                <div class="popup-tickets__item popup__table popup__table--bordered">
+                    <!-- .popup__row -->
+                    <div class="popup__row">
+                        <!-- popup__cell -->
+                        <div class="popup__cell popup-tickets__main">
+                            <h4 class="popup-tickets__title">VIP входной</h4>
+                            <h5 class="popup-tickets__subtitle">Vip (третий этаж). свободная рассадка</h5>
+                        </div>
+                        <!-- END:popup__cell -->
+                        <!-- popup__cell -->
+                        <div class="popup__cell popup-tickets__price popup__cell--right">
+                            <span class="popup-tickets__price-value">15</span>
+                            <span class="popup-tickets__price-currency rouble">Р</span>
+                        </div>
+                        <!-- END:popup__cell -->
+                        <!-- popup__cell -->
+                        <div class="popup__cell popup-tickets__count popup__cell--right">
+                            <span class="popup-tickets__count-value">4545454545</span>
+                            <span class="popup-tickets__count-amount">билета</span>
+                        </div>
+                        <!-- END:popup__cell -->
+                        <!-- popup__cell -->
+                        <div class="popup__cell popup-tickets__offer popup__cell--right">
+                            <input type="number" name="addTicketsInputNumber" id="addTicketsInputNumber" class="popup-tickets__offer-number default-input-number" readonly min="0" value="0" />
+                        </div>
+                        <!-- END:popup__cell -->
+                    </div>
+                    <!-- END:.popup__row -->
+                </div>
+                <!-- END:.popup-tickets__item -->
+            </div>
+            <!-- END:.popup-tickets -->
+        </div>
+        <!-- END:.popup-main__main-content -->
+        <!-- .popup__footer -->
+        <div class="popup__footer">
+            <!-- popup__footer-top -->
+            <div class="popup__footer-top popup__table popup__table--bordered-top">
+                <!-- .popup__row -->
+                <div class="popup__row">
+                    <!-- .popup__cell popup__cell--right -->
+                    <div class="popup__cell popup__cell--right">
+                        <div class="popup__footer-price">
+                            <span class="popup__footer-value">0</span>
+                            <span class="popup__footer-currency rouble">Р</span>
+                        </div>
+                        <div class="popup__footer-btn">
+                            <button type="button" class="popup__footer-submit-btn disabled">Купить</button>
+                        </div>
+                    </div>
+                    <!-- END:.popup__cell popup__cell--right -->
+                </div>
+                <!-- END:.popup__row -->
+            </div>
+            <!-- END:popup__footer-top -->
+            <!-- .popup__row popup__footer-bottom -->
+            <div class="popup__table popup__footer-bottom">
+                <!-- .popup__row -->
+                <div class="popup__row">
+                    <!-- .popup__cell -->
+                    <div class="popup__cell popup__support-info">
+                        <span>Служба поддержки</span>
+                        <span><a href="tel:88005555176" class="popup__footer-phone">8 800 555-51-76</a></span>
+                    </div>
+                    <!-- END:.popup__cell -->
+                    <!-- .popup__cell popup__cell--right -->
+                    <div class="popup__cell popup__cell--right">
+                        <!-- .popup__footer-copyright -->
+                        <div class="popup__footer-copyright">
+                            <span>© 2016 ООО TicketsLab</span>
+                        </div>
+                        <!-- END:.popup__footer-copyright -->
+                    </div>
+                    <!-- END:.popup__cell popup__cell--right -->
+                </div>
+                <!-- END:.popup__row -->
+            </div>
+            <!-- END:.popup__row popup__footer-bottom -->
+        </div>
+        <!-- END:.popup__footer -->
+        <!-- .confirm-popup -->
+        <div class="confirm-popup">
+            <!-- .confirm-popup__inner -->
+            <div class="confirm-popup__inner">
+                <h4 class="confirm-popup__title">Уже выбран <span class="confirm-popup__count">1</span> билет</h4>
+                <h5 class="confirm-popup__subtitle">Вы точно хотите выйти?</h5>
+                <!-- .confirm-block -->
+                <div class="confirm-block">
+                    <button type="button" class="btn confirm-block__btn confirm-block__btn--submit">Продолжить покупку</button>
+                    <button type="button" class="btn confirm-block__btn confirm-block__btn--close">Выйти</button>
+                </div>
+                <!-- END:.confirm-block -->
+            </div>
+            <!-- END:.confirm-popup__inner -->
+        </div>
+        <!-- END:.confirm-popup -->
+        <!-- .loader -->
+        <div class="loader">
+            <!-- .spinner -->
+            <div class="spinner">
+                <!-- .spinner__main -->
+                <div class="spinner__main">
+                    <!-- .spinner__inner -->
+                    <div class="spinner__inner"></div>
+                    <!-- END:.spinner__inner -->
+                </div>
+                <!-- END:.spinner__main -->
+            </div>
+            <!-- END:.spinner -->
+            <span class="loader_label">Создание заказа...</span>
+        </div>
+        <!-- END:.loader -->
+    </main>
+    <!-- END:popup-main -->
+    <!-- vendor -->
+    <script src="./vendor/jquery-2.2.4/jquery-2.2.4.js"></script>
+    <script src="./vendor/jquery.formstyler/jquery.formstyler.js"></script>
+    <!-- END:vendor -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
