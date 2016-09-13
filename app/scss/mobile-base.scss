@@ -5,7 +5,14 @@
     text-align: center;
 }
 
-.popup{
-	
+.popup {
+    &-main {
+        &__header {
+            &-title {
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 // END:mobile-base

@@ -3,4 +3,9 @@
     width: 100%;
     text-align: center;
 }
+
+.popup-main__header-title {
+    font-weight: normal;
+    margin-bottom: 0;
+}
 /*# sourceMappingURL=sourcemaps/mobile-base.css.map */
