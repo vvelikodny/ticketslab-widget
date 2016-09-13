@@ -215,6 +215,14 @@ body {
     display: none;
 }
 
+.popup-main {
+    height: 100%;
+}
+
+.popup-main__main-content {
+    height: 100%;
+}
+
 .popup__overlay {
     display: block;
 }
@@ -231,7 +239,7 @@ body {
     display: block;
     overflow: hidden;
     width: 848px;
-    height: 646px;
+    height: 66.52935%;
     padding: 0;
     background: #fff;
 }

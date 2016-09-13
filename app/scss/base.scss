@@ -35,6 +35,12 @@ body {
     display: none;
 
     @extend %default-iframe-overlay;
+    &-main {
+        height: 100%;
+        &__main-content {
+            height: 100%;
+        }
+    }
     &__overlay {
         display: block;
     }
@@ -49,7 +55,7 @@ body {
         display: block;
         overflow: hidden;
         width: 848px;
-        height: 646px;
+        height: gridValue('popupDynamicHeight');
         padding: 0;
         background: #fff;
 

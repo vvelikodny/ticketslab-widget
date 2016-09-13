@@ -132,6 +132,11 @@ body {
     max-width: 400px;
 }
 
+.popup-tickets {
+    overflow: auto;
+    height: 52%;
+}
+
 .popup-tickets__item {
     padding: 34px 32px;
 }

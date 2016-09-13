@@ -41,6 +41,8 @@ body {
 }
 
 .popup-tickets {
+    overflow: auto;
+    height: gridValue('popupTicketsDynamicHeight');
     &__item {
         padding: 34px 32px;
     }

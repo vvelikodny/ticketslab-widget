@@ -1,7 +1,6 @@
 //= js-assets/variables
 
 $(document).ready(function() {
-	//= js-assets/dynamicPopupHeight
 	//= js-assets/startPopup
 	//= js-assets/popupTicketsOfferNumber
 	//= js-assets/popupCloseBtn
