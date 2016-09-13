@@ -27,10 +27,20 @@ body {
     @extend %default-btn;
 }
 
+.rouble {
+    font-family: 'rouble';
+}
+
 .popup {
     display: none;
 
     @extend %default-iframe-overlay;
+    &-main {
+        height: 100%;
+        &__main-content {
+            height: 100%;
+        }
+    }
     &__overlay {
         display: block;
     }
@@ -45,11 +55,21 @@ body {
         display: block;
         overflow: hidden;
         width: 848px;
-        height: 646px;
+        height: gridValue('popupDynamicHeight');
         padding: 0;
         background: #fff;
 
         @extend %translate-xy;
+    }
+    &__dynamic-area {
+        overflow: auto;
+        height: gridValue('popupDynamicAreaHeight');
+        @media screen and (max-height: 450px) {
+            height: 32%;
+        }
+        @media screen and (max-height: 300px) {
+            height: 20%;
+        } 
     }
     &__table {
         display: table;
@@ -257,5 +277,6 @@ body {
     border-radius: 100%;
     background: #7b7972;
 }
+
 
 /*END:base*/

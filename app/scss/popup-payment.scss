@@ -31,7 +31,7 @@ body {
 }
 
 .payment-card {
-    padding: 48px 0;
+    padding: 30px 0;
     &__inner {
         position: relative;
         width: gridValue('cardWidth');
@@ -241,16 +241,16 @@ body {
         display: inline-block;
         height: 24px;
         vertical-align: middle;
-        background-image: url('../img/base/card-logos.png');
         background-repeat: no-repeat;
+        background-size: 100% 100%;
         &--mastercard {
             width: 39px;
             margin-right: 12px;
-            background-position: 0 0;
+            background-image: url('../img/base/card-logos/mastercard.svg');
         }
         &--visa {
             width: 63px;
-            background-position: -51px 0;
+            background-image: url('../img/base/card-logos/visa.svg');
         }
     }
 }

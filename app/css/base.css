@@ -207,8 +207,20 @@ body {
     margin: 0 auto;
 }
 
+.rouble {
+    font-family: 'rouble';
+}
+
 .popup {
     display: none;
+}
+
+.popup-main {
+    height: 100%;
+}
+
+.popup-main__main-content {
+    height: 100%;
 }
 
 .popup__overlay {
@@ -227,9 +239,26 @@ body {
     display: block;
     overflow: hidden;
     width: 848px;
-    height: 646px;
+    height: 66.52935%;
     padding: 0;
     background: #fff;
+}
+
+.popup__dynamic-area {
+    overflow: auto;
+    height: 52%;
+}
+
+@media screen and (max-height: 450px) {
+    .popup__dynamic-area {
+        height: 32%;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .popup__dynamic-area {
+        height: 20%;
+    }
 }
 
 .popup__table {
