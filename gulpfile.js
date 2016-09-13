@@ -81,7 +81,7 @@ gulp.task('dist', function(){
 gulp.task('browserSync', function() {
 	browserSync({
 		server: {
-			baseDir: './app'
+			baseDir: './app/template-modules-mobile/index-mobile.html'
 		},
 		port: 3000,
 		open: true,
