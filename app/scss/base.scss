@@ -64,12 +64,12 @@ body {
     &__dynamic-area {
         overflow: auto;
         height: gridValue('popupDynamicAreaHeight');
-        @media screen and (max-height: 650px) {
+        @media screen and (max-height: 450px) {
             height: 32%;
         }
-        @media screen and (max-height: 465px) {
+        @media screen and (max-height: 300px) {
             height: 20%;
-        }
+        } 
     }
     &__table {
         display: table;

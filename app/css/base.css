@@ -249,13 +249,13 @@ body {
     height: 52%;
 }
 
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 450px) {
     .popup__dynamic-area {
         height: 32%;
     }
 }
 
-@media screen and (max-height: 465px) {
+@media screen and (max-height: 300px) {
     .popup__dynamic-area {
         height: 20%;
     }
