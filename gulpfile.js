@@ -59,8 +59,8 @@ gulp.task('html-browser-sync', function(){
 });
 
 gulp.task('vendor', function(){
-	return gulp.src('app/vendor/')
-	.pipe(gulp.dest('dist/'));
+	gulp.src('app/vendor/*')
+	.pipe(gulp.dest('dist/vendor/'));
 });
 
 gulp.task('html', function(){
@@ -79,8 +79,8 @@ gulp.task('dist', function(){
 	.pipe(gulpif('*.css', minifyCSS()))
 	.pipe(gulpif('*.js', uglify({
 		mangle: false
-	})));
-	gulp.start('vendor')
+	})))
+	// gulp.start('vendor')
 	.pipe(gulp.dest('dist/'));
 });
 
