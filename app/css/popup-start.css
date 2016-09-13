@@ -137,6 +137,18 @@ body {
     height: 52%;
 }
 
+@media screen and (max-height: 650px) {
+    .popup-tickets {
+        height: 32%;
+    }
+}
+
+@media screen and (max-height: 465px) {
+    .popup-tickets {
+        height: 20%;
+    }
+}
+
 .popup-tickets__item {
     padding: 34px 32px;
 }
