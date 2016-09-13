@@ -41,14 +41,6 @@ body {
 }
 
 .popup-tickets {
-    overflow: auto;
-    height: gridValue('popupTicketsDynamicHeight');
-    @media screen and (max-height: 650px) {
-        height: 32%;
-    }
-    @media screen and (max-height: 465px) {
-        height: 20%;
-    }
     &__item {
         padding: 34px 32px;
     }

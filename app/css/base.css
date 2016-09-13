@@ -244,6 +244,23 @@ body {
     background: #fff;
 }
 
+.popup__dynamic-area {
+    overflow: auto;
+    height: 52%;
+}
+
+@media screen and (max-height: 650px) {
+    .popup__dynamic-area {
+        height: 32%;
+    }
+}
+
+@media screen and (max-height: 465px) {
+    .popup__dynamic-area {
+        height: 20%;
+    }
+}
+
 .popup__table {
     display: table;
     width: 100%;
