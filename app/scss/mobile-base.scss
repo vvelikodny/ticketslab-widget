@@ -135,6 +135,18 @@
             }
         }
     }
+    &-payment {
+        &__title-cell {
+            width: 80%;
+            padding-left: 10%;
+        }
+        &__title {
+            font-weight: normal;
+        }
+        &__timer-cell {
+            width: 10%;
+        }
+    }
     &__footer {
         // position: static;
         &-btn {
@@ -199,6 +211,19 @@
             list-style: none;
             color: #fff;
         }
+    }
+}
+
+.pay-timer-mobile {
+    &__icon {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    &__numbers {
+        display: inline-block;
+        font-size: 18px;
+        vertical-align: middle;
     }
 }
 // END:mobile-base

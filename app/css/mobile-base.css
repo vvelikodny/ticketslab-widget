@@ -257,6 +257,19 @@
     }
 }
 
+.popup-payment__title-cell {
+    width: 80%;
+    padding-left: 10%;
+}
+
+.popup-payment__title {
+    font-weight: normal;
+}
+
+.popup-payment__timer-cell {
+    width: 10%;
+}
+
 .popup__footer-btn {
     display: block;
 }
@@ -328,5 +341,17 @@
     line-height: 16px;
     list-style: none;
     color: #fff;
+}
+
+.pay-timer-mobile__icon {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.pay-timer-mobile__numbers {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
 }
 /*# sourceMappingURL=sourcemaps/mobile-base.css.map */
