@@ -99,7 +99,20 @@
 }
 
 .popup-main__header-title {
+    font-size: 17px;
     font-weight: normal;
+    line-height: 24px;
     margin-bottom: 0;
+}
+
+.popup-main__header-info {
+    width: 10%;
+}
+
+.popup-main__header-info-btn {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    background: none;
 }
 /*# sourceMappingURL=sourcemaps/mobile-base.css.map */
