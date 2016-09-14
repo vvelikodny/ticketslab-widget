@@ -10,8 +10,8 @@
     <!-- END:vendor -->
     <link rel="stylesheet" href="./css/assets.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/popup-start.css">
     <link rel="stylesheet" href="./css/mobile-base.css">
+    <link rel="stylesheet" href="./css/popup-start.css">
 </head>
 
 <body>
@@ -128,12 +128,8 @@
                 <div class="popup__row">
                     <!-- .popup__cell popup__cell--right -->
                     <div class="popup__cell popup__cell--right">
-                        <div class="popup__footer-price">
-                            <span class="popup__footer-value">0</span>
-                            <span class="popup__footer-currency rouble">Р</span>
-                        </div>
                         <div class="popup__footer-btn">
-                            <button type="button" class="popup__footer-submit-btn disabled">Купить</button>
+                            <button type="button" class="popup__footer-submit-btn disabled">Купить билеты</button>
                         </div>
                     </div>
                     <!-- END:.popup__cell popup__cell--right -->
@@ -141,29 +137,6 @@
                 <!-- END:.popup__row -->
             </div>
             <!-- END:popup__footer-top -->
-            <!-- .popup__row popup__footer-bottom -->
-            <div class="popup__table popup__footer-bottom">
-                <!-- .popup__row -->
-                <div class="popup__row">
-                    <!-- .popup__cell -->
-                    <div class="popup__cell popup__support-info">
-                        <span>Служба поддержки</span>
-                        <span><a href="tel:88005555176" class="popup__footer-phone">8 800 555-51-76</a></span>
-                    </div>
-                    <!-- END:.popup__cell -->
-                    <!-- .popup__cell popup__cell--right -->
-                    <div class="popup__cell popup__cell--right">
-                        <!-- .popup__footer-copyright -->
-                        <div class="popup__footer-copyright">
-                            <span>© 2016 ООО TicketsLab</span>
-                        </div>
-                        <!-- END:.popup__footer-copyright -->
-                    </div>
-                    <!-- END:.popup__cell popup__cell--right -->
-                </div>
-                <!-- END:.popup__row -->
-            </div>
-            <!-- END:.popup__row popup__footer-bottom -->
         </div>
         <!-- END:.popup__footer -->
         <!-- .confirm-popup -->
@@ -198,6 +171,25 @@
             <span class="loader_label">Создание заказа...</span>
         </div>
         <!-- END:.loader -->
+        <!-- .popup-start-mobile__info-popup -->
+        <div class="popup-info-mobile">
+            <!-- .popup-info-mobile__inner -->
+            <div class="popup-info-mobile__inner">
+                <h4 class="popup-info-mobile___title">Обратная связь</h4>
+                <div class="popup-info-mobile__description">
+                    <p>Вас приветствует служба поддержки TicketsLab</p>
+                </div>
+                <!-- .popup-info-mobile__links-list -->
+                <ul class="popup-info-mobile__links-list">
+                    <li><a href="#">Написать</a></li>
+                    <li><a href="#">Позвонить</a></li>
+                    <li><a href="#"><strong>Отмена</strong></a></li>
+                </ul>
+                <!-- END:.popup-info-mobile__links-list -->
+            </div>
+            <!-- END:.popup-info-mobile__inner -->
+        </div>
+        <!-- END:.popup-start-mobile__info-popup -->
     </main>
     <!-- END:popup-main -->
     <!-- vendor -->
@@ -205,7 +197,7 @@
     <script src="./vendor/jquery.formstyler/jquery.formstyler.js"></script>
     <!-- END:vendor -->
     <script src="./js/main.js"></script>
-    <script src="./js/startPopupMobile.js"></script>
+    <script src="./js/mobile.js"></script>
 </body>
 
 </html>
