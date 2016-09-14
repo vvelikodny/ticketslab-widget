@@ -71,9 +71,14 @@
 %default-btn-mobile {
     display: block;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 8px 17.1px;
     text-align: center;
+    @media screen and (max-width: 400px) {
+        font-size: 0.9rem;
+        line-height: inherit;
+        padding: 10px 17.1px;
+    }
 }
 
 %default-input {

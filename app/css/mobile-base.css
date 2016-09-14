@@ -94,15 +94,25 @@
 
 .primary-btn,
 .popup__footer-submit-btn {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: block;
     width: 100%;
     padding: 8px 17.1px;
     text-align: center;
 }
 
+@media screen and (max-width: 400px) {
+    .primary-btn,
+    .popup__footer-submit-btn {
+        font-size: .9rem;
+        line-height: inherit;
+        padding: 10px 17.1px;
+    }
+}
+
 .popup__dynamic-area {
     height: auto;
+    margin-bottom: 100px;
 }
 
 @media screen and (max-width: 650px) {

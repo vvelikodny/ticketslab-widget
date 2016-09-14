@@ -8,6 +8,7 @@
 .popup {
     &__dynamic-area {
         height: auto;
+        margin-bottom: 100px;
     }
     &__table {
         @media screen and (max-width: 650px) {
