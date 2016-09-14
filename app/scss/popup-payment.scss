@@ -7,6 +7,9 @@ body {
 }
 
 .popup-payment {
+    &__form {
+        height: 100%;
+    }
     &__title {
         font-size: 27px;
         font-weight: 700;
@@ -41,9 +44,6 @@ body {
         width: gridValue('cardWidth');
         height: 238px;
         margin: 0 auto;
-    }
-    &__form {
-        @extend %clearfix;
     }
     &__side {
         position: relative;
@@ -259,5 +259,18 @@ body {
     }
 }
 
-
+.payment-add-fields {
+    font-size: 15px;
+    line-height: 27px;
+    color: #777;
+    &__inner {
+        @extend .payment-card__inner;
+    }
+    &__element {
+        margin-bottom: 17px;
+    }
+    &__field {
+        font-size: 15px;
+    }
+}
 /*END:popup-payment*/

@@ -87,7 +87,6 @@
     transition: all .15s ease-in;
 }
 
-.payment-card__form:after,
 .payment-card__expires:after,
 .pay-timer:after,
 .card-logos:after {
@@ -155,6 +154,10 @@ body {
     font-family: sans-serif;
 }
 
+.popup-payment__form {
+    height: 100%;
+}
+
 .popup-payment__title {
     font-size: 27px;
     font-weight: 700;
@@ -191,7 +194,8 @@ body {
     }
 }
 
-.payment-card__inner {
+.payment-card__inner,
+.payment-add-fields__inner {
     position: relative;
     width: 520px;
     height: 238px;
@@ -422,6 +426,20 @@ body {
 .card-logos__logo--visa {
     width: 63px;
     background-image: url('../img/base/card-logos/visa.svg');
+}
+
+.payment-add-fields {
+    font-size: 15px;
+    line-height: 27px;
+    color: #777;
+}
+
+.payment-add-fields__element {
+    margin-bottom: 17px;
+}
+
+.payment-add-fields__field {
+    font-size: 15px;
 }
 
 

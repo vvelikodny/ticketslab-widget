@@ -59,7 +59,7 @@ gulp.task('html-browser-sync', function(){
 });
 
 gulp.task('html', function(){
-	return gulp.src('app/template-modules-mobile/*.html')
+	return gulp.src('app/template-modules/*.html')
 	.pipe(rigger())
 	.pipe(prettify())
 	.pipe(gulp.dest('app/'));
