@@ -44,6 +44,10 @@ body {
         width: gridValue('cardWidth');
         height: 238px;
         margin: 0 auto;
+        &--mobile {
+            width: auto;
+            height: auto;
+        }
     }
     &__side {
         position: relative;

@@ -367,4 +367,44 @@
 .pay-timer-mobile__numbers--danger {
     color: #f06262;
 }
+
+.payment-card__side {
+    float: none;
+    height: auto;
+}
+
+.payment-card__front {
+    width: 100%;
+}
+
+.payment-card__number-fields {
+    text-align: left;
+}
+
+.payment-card__expires-inner {
+    float: none;
+}
+
+.payment-card__back {
+    float: none;
+    width: 100%;
+}
+
+.payment-card__field-title {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 27px;
+    margin-bottom: 16px;
+    padding: 0;
+    color: #534e4e;
+}
+
+.payment-card__owner-field {
+    font-size: 15px;
+}
+
+.payment-add-fields__inner {
+    width: 100%;
+    height: auto;
+}
 /*# sourceMappingURL=sourcemaps/mobile-base.css.map */

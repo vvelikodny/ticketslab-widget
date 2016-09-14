@@ -240,4 +240,51 @@
         }
     }
 }
+
+.payment {
+    &-card {
+        &__side {
+            float: none;
+            height: auto;
+        }
+        &__front {
+            width: 100%;
+        }
+        &__number {
+            &-fields {
+                text-align: left;
+            }
+        }
+        &__expires {
+            &-inner {
+                float: none;
+            }
+        }
+        &__back {
+            float: none;
+            width: 100%;
+        }
+        &__field {
+            &-title {
+                font-size: 17px;
+                font-weight: normal;
+                line-height: 27px;
+                margin-bottom: 16px;
+                padding: 0;
+                color: #534e4e;
+            }
+        }
+        &__owner{
+            &-field{
+                font-size: 15px;
+            }
+        }
+    }
+    &-add-fields {
+        &__inner {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
 // END:mobile-base
