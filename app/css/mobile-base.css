@@ -267,6 +267,10 @@
     vertical-align: middle;
 }
 
+.popup-payment__title-price-value {
+    font-weight: normal;
+}
+
 .popup__empty-leftcell {
     width: 10%;
 }
