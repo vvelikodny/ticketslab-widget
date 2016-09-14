@@ -2,10 +2,11 @@ $colors: (
     'primary': #ffdb4d,
     'primaryHover': #ffd633,
     'spinner': #fc0,
-    'warning': #f0ad4e,
     'disabledBg': #ececec,
     'disabledColor': #8f8f8f,
-    'popupFooterBottom': #333
+    'popupFooterBottom': #333,
+    'warning': #f0ad4e,
+    'danger': #f06262,
 );
 @function color($color) {
     @return map-get($colors, $color);

@@ -259,14 +259,15 @@
 
 .popup-payment__title-cell {
     width: 80%;
-    padding-left: 10%;
-}
-
-.popup-payment__title {
-    font-weight: normal;
 }
 
 .popup-payment__timer-cell {
+    line-height: 34px;
+    width: 10%;
+    vertical-align: middle;
+}
+
+.popup__empty-leftcell {
     width: 10%;
 }
 
@@ -353,5 +354,13 @@
     font-size: 18px;
     display: inline-block;
     vertical-align: middle;
+}
+
+.pay-timer-mobile__numbers--warning {
+    color: #f0ad4e;
+}
+
+.pay-timer-mobile__numbers--danger {
+    color: #f06262;
 }
 /*# sourceMappingURL=sourcemaps/mobile-base.css.map */

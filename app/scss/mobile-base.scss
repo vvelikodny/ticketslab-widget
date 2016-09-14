@@ -138,14 +138,15 @@
     &-payment {
         &__title-cell {
             width: 80%;
-            padding-left: 10%;
-        }
-        &__title {
-            font-weight: normal;
         }
         &__timer-cell {
             width: 10%;
+            line-height: 34px;
+            vertical-align: middle;
         }
+    }
+    &__empty-leftcell {
+        width: 10%;
     }
     &__footer {
         // position: static;
@@ -224,6 +225,12 @@
         display: inline-block;
         font-size: 18px;
         vertical-align: middle;
+        &--warning{
+            color: color('warning');
+        }
+        &--danger{
+            color: color('danger');
+        }
     }
 }
 // END:mobile-base
