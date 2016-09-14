@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Start Popup Mobile</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/base/favicon.ico" />
     <!-- vendor -->
@@ -10,8 +11,8 @@
     <!-- END:vendor -->
     <link rel="stylesheet" href="./css/assets.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/mobile-base.css">
     <link rel="stylesheet" href="./css/popup-start.css">
+    <link rel="stylesheet" href="./css/mobile-base.css">
 </head>
 
 <body>
@@ -54,7 +55,29 @@
             <!-- END:.popup-main__header -->
             <!-- .popup-main-banner -->
             <div class="mobile-banner" style="background-image: url('./img/mobile/concert-bg.jpg');">
-                <div class="mobile-banner__age">12+</div>
+                <!-- mobile-banner__age -->
+                <div class="mobile-banner__age">
+                    <span class="mobile-banner__age-text">12+</span>
+                </div>
+                <!-- END:mobile-banner__age -->
+                <h4 class="mobile-banner__title">Distemper</h4>
+                <!-- .mobile-banner__event -->
+                <div class="mobile-banner__event">
+                    <!-- .mobile-banner__date -->
+                    <div class="mobile-banner__date">
+                        <!-- .mobile-banner__date-number -->
+                        <span class="mobile-banner__date-number">16 сентября,</span>
+                        <span class="mobile-banner__date-time">19:00</span>
+                        <!-- END:.mobile-banner__date-number -->
+                    </div>
+                    <!-- END:.mobile-banner__date -->
+                    <!-- .mobile-banner__address -->
+                    <div class="mobile-banner__address">
+                        <span>RED, Москва</span>
+                    </div>
+                    <!-- END:.mobile-banner__address -->
+                </div>
+                <!-- END:.mobile-banner__event -->
             </div>
             <!-- END:.popup-main-banner -->
             <!-- .popup-tickets -->
@@ -67,18 +90,10 @@
                         <div class="popup__cell popup-tickets__main">
                             <h4 class="popup-tickets__title">Танцевальный партерТанцевальный партер Танцевальный партер Танцевальный партер Танцевальный партер</h4>
                             <h5 class="popup-tickets__subtitle">Входной билет без мест</h5>
-                        </div>
-                        <!-- END:popup__cell -->
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__price popup__cell--right">
-                            <span class="popup-tickets__price-value">2000</span>
-                            <span class="popup-tickets__price-currency rouble">Р</span>
-                        </div>
-                        <!-- END:popup__cell -->
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__count popup__cell--right">
-                            <span class="popup-tickets__count-value">34</span>
-                            <span class="popup-tickets__count-amount">билета</span>
+                            <div class="popup-tickets__price">
+                                <span class="popup-tickets__price-value">2000</span>
+                                <span class="popup-tickets__price-currency rouble">Р</span>
+                            </div>
                         </div>
                         <!-- END:popup__cell -->
                         <!-- popup__cell -->
@@ -98,18 +113,10 @@
                         <div class="popup__cell popup-tickets__main">
                             <h4 class="popup-tickets__title">VIP входной</h4>
                             <h5 class="popup-tickets__subtitle">Vip (третий этаж). свободная рассадка</h5>
-                        </div>
-                        <!-- END:popup__cell -->
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__price popup__cell--right">
-                            <span class="popup-tickets__price-value">15</span>
-                            <span class="popup-tickets__price-currency rouble">Р</span>
-                        </div>
-                        <!-- END:popup__cell -->
-                        <!-- popup__cell -->
-                        <div class="popup__cell popup-tickets__count popup__cell--right">
-                            <span class="popup-tickets__count-value">4545454545</span>
-                            <span class="popup-tickets__count-amount">билета</span>
+                            <div class="popup-tickets__price">
+                                <span class="popup-tickets__price-value">15</span>
+                                <span class="popup-tickets__price-currency rouble">Р</span>
+                            </div>
                         </div>
                         <!-- END:popup__cell -->
                         <!-- popup__cell -->
