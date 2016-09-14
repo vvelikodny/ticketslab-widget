@@ -1,12 +1,18 @@
+var popupMainHeaderInfoBtn = $('.popup-main__header-info-btn');
+var popupMobile = $('.popup-mobile');
+var popupInfoMobile = $('.popup-info-mobile');
+var popupMobileCloseBtn = $('.popup-mobile__close-btn');
+
 $(document).ready(function() {
 	// startPopupMobile
-	var popupMainHeaderInfoBtn = $('.popup-main__header-info-btn');
-	var popupInfiMobile = $('.popup-info-mobile');
-	
 	$(document).ready(function() {
 	    popupMainHeaderInfoBtn.on('click', function(event) {
 	        event.preventDefault();
-	        popupInfiMobile.fadeIn(500);
+	        popupInfoMobile.fadeIn(500);
+	    });
+	    popupMobileCloseBtn.on('click', function(event) {
+	    	event.preventDefault();
+	    	popupMobile.fadeOut(500);
 	    });
 	});
 	// END:startPopupMobile
