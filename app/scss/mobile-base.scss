@@ -136,6 +136,11 @@
         }
     }
     &-payment {
+        &__form {
+            @media screen and (max-width: 770px) {
+                height: auto;
+            }
+        }
         &__title-cell {
             width: 80%;
             @media screen and (max-width: 900px) {
@@ -159,6 +164,7 @@
             }
             @media screen and (max-width: 550px) {
                 font-size: 25px;
+                margin-bottom: 5px;
             }
             &-price {
                 &-value {
@@ -181,6 +187,11 @@
         }
         &-submit-btn {
             @extend %default-btn-mobile;
+        }
+        @media screen and (max-width: 770px) {
+            &--payment-mobile {
+                position: static;
+            }
         }
     }
     &__close-btn {

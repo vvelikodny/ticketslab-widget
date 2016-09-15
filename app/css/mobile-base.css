@@ -257,6 +257,12 @@
     }
 }
 
+@media screen and (max-width: 770px) {
+    .popup-payment__form {
+        height: auto;
+    }
+}
+
 .popup-payment__title-cell {
     width: 80%;
 }
@@ -291,6 +297,7 @@
 @media screen and (max-width: 550px) {
     .popup-payment__title {
         font-size: 25px;
+        margin-bottom: 5px;
     }
 }
 
@@ -311,6 +318,12 @@
 
 .popup__footer-btn {
     display: block;
+}
+
+@media screen and (max-width: 770px) {
+    .popup__footer--payment-mobile {
+        position: static;
+    }
 }
 
 .mobile-banner {
