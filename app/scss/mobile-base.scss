@@ -274,9 +274,20 @@
                 color: #534e4e;
             }
         }
-        &__owner{
-            &-field{
+        &__owner {
+            &-field {
                 font-size: 15px;
+            }
+        }
+        &__expires {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &__cvv {
+            display: inline-block;
+            vertical-align: middle;
+            &-field{
+                margin-bottom: 0;
             }
         }
     }

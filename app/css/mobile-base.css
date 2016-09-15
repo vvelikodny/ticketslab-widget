@@ -403,6 +403,20 @@
     font-size: 15px;
 }
 
+.payment-card__expires {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.payment-card__cvv {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.payment-card__cvv-field {
+    margin-bottom: 0;
+}
+
 .payment-add-fields__inner {
     width: 100%;
     height: auto;
