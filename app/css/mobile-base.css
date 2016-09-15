@@ -154,6 +154,12 @@
     background: none;
 }
 
+@media screen and (max-width: 765px) {
+    .popup-main__main-content {
+        height: auto;
+    }
+}
+
 .popup-info-mobile {
     position: fixed;
     z-index: 9999;
@@ -257,12 +263,6 @@
     }
 }
 
-@media screen and (max-width: 765px) {
-    .popup-payment__form {
-        height: auto;
-    }
-}
-
 .popup-payment__title-cell {
     width: 80%;
 }
@@ -316,14 +316,14 @@
     }
 }
 
-.popup__footer-btn {
-    display: block;
-}
-
 @media screen and (max-width: 765px) {
-    .popup__footer--payment-mobile {
+    .popup__footer {
         position: static;
     }
+}
+
+.popup__footer-btn {
+    display: block;
 }
 
 .mobile-banner {
@@ -415,6 +415,12 @@
     color: #f06262;
 }
 
+@media screen and (max-width: 765px) {
+    .payment-card {
+        height: auto;
+    }
+}
+
 .payment-card__side {
     float: none;
     height: auto;
@@ -503,5 +509,12 @@
 .payment-add-fields__inner {
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 650px) {
+    .spinner {
+        width: 100px;
+        height: 100px;
+    }
 }
 /*# sourceMappingURL=sourcemaps/mobile-base.css.map */

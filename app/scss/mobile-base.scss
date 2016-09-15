@@ -45,6 +45,11 @@
                 }
             }
         }
+        &__main-content {
+            @media screen and (max-width: 765px) {
+                height: auto;
+            }
+        }
     }
     &-info-mobile {
         position: fixed;
@@ -136,11 +141,6 @@
         }
     }
     &-payment {
-        &__form {
-            @media screen and (max-width: 765px) {
-                height: auto;
-            }
-        }
         &__title-cell {
             width: 80%;
             @media screen and (max-width: 900px) {
@@ -181,17 +181,15 @@
         }
     }
     &__footer {
+        @media screen and (max-width: 765px) {
+            position: static;
+        }
         // position: static;
         &-btn {
             display: block;
         }
         &-submit-btn {
             @extend %default-btn-mobile;
-        }
-        @media screen and (max-width: 765px) {
-            &--payment-mobile {
-                position: static;
-            }
         }
     }
     &__close-btn {
@@ -273,6 +271,9 @@
 
 .payment {
     &-card {
+        @media screen and (max-width: 765px) {
+            height: auto;
+        }
         &__side {
             float: none;
             height: auto;
@@ -350,6 +351,13 @@
             width: 100%;
             height: auto;
         }
+    }
+}
+
+.spinner {
+    @media screen and (max-width: 650px) {
+        width: 100px;
+        height: 100px;
     }
 }
 // END:mobile-base
