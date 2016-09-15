@@ -187,13 +187,6 @@ body {
     padding: 30px 0;
 }
 
-@media screen and (max-height: 520px) {
-    .payment-card {
-        overflow: auto;
-        height: 55%;
-    }
-}
-
 .payment-card__inner,
 .payment-add-fields__inner {
     position: relative;
@@ -437,6 +430,10 @@ body {
     font-size: 15px;
     line-height: 27px;
     color: #777;
+}
+
+.payment-add-fields__inner {
+    height: auto;
 }
 
 .payment-add-fields__element {

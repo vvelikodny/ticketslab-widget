@@ -57,130 +57,134 @@
                     <!-- END:.popup__row -->
                 </div>
                 <!-- END:.popup-main__header -->
-                <!-- .payment-card -->
-                <div class="payment-card">
-                    <!-- .payment-card__inner -->
-                    <div class="payment-card__inner">
-                        <!-- .payment-card__front .payment-card__side -->
-                        <div class="payment-card__front payment-card__side">
-                            <!-- .payment-card__logos -->
-                            <div class="card-logos">
-                                <!-- .card-logos__inner -->
-                                <div class="card-logos__inner">
-                                    <span class="card-logos__logo card-logos__logo--mastercard"></span>
-                                    <span class="card-logos__logo card-logos__logo--visa"></span>
+                <!-- .popup__dynamic-area -->
+                <div class="popup__dynamic-area">
+                    <!-- .payment-card -->
+                    <div class="payment-card">
+                        <!-- .payment-card__inner -->
+                        <div class="payment-card__inner">
+                            <!-- .payment-card__front .payment-card__side -->
+                            <div class="payment-card__front payment-card__side">
+                                <!-- .payment-card__logos -->
+                                <div class="card-logos">
+                                    <!-- .card-logos__inner -->
+                                    <div class="card-logos__inner">
+                                        <span class="card-logos__logo card-logos__logo--mastercard"></span>
+                                        <span class="card-logos__logo card-logos__logo--visa"></span>
+                                    </div>
+                                    <!-- END:.card-logos__inner -->
                                 </div>
-                                <!-- END:.card-logos__inner -->
-                            </div>
-                            <!-- END:.payment-card__logos -->
-                            <!-- .payment-card__number -->
-                            <div class="payment-card__number payment-card__element">
-                                <h6 class="payment-card__number-title">Номер карты</h6>
-                                <!-- .payment-card__number-fields -->
-                                <div class="payment-card__number-fields">
-                                    <div class="payment-card__field-wrapper">
-                                        <input type="text" class="payment-card__field payment-card__tabfield" maxlength="4" tabindex="1" placeholder="1234" />
+                                <!-- END:.payment-card__logos -->
+                                <!-- .payment-card__number -->
+                                <div class="payment-card__number payment-card__element">
+                                    <h6 class="payment-card__number-title">Номер карты</h6>
+                                    <!-- .payment-card__number-fields -->
+                                    <div class="payment-card__number-fields">
+                                        <div class="payment-card__field-wrapper">
+                                            <input type="text" class="payment-card__field payment-card__tabfield" maxlength="4" tabindex="1" placeholder="1234" />
+                                        </div>
+                                        <div class="payment-card__field-wrapper">
+                                            <input type="text" class="payment-card__field payment-card__tabfield" maxlength="4" tabindex="2" placeholder="5678" />
+                                        </div>
+                                        <div class="payment-card__field-wrapper">
+                                            <input type="text" class="payment-card__field payment-card__tabfield" maxlength="4" tabindex="3" placeholder="9012" />
+                                        </div>
+                                        <div class="payment-card__field-wrapper">
+                                            <input type="text" class="payment-card__field payment-card__tabfield" maxlength="4" tabindex="4" placeholder="3456" />
+                                        </div>
                                     </div>
-                                    <div class="payment-card__field-wrapper">
-                                        <input type="text" class="payment-card__field payment-card__tabfield" maxlength="4" tabindex="2" placeholder="5678" />
-                                    </div>
-                                    <div class="payment-card__field-wrapper">
-                                        <input type="text" class="payment-card__field payment-card__tabfield" maxlength="4" tabindex="3" placeholder="9012" />
-                                    </div>
-                                    <div class="payment-card__field-wrapper">
-                                        <input type="text" class="payment-card__field payment-card__tabfield" maxlength="4" tabindex="4" placeholder="3456" />
-                                    </div>
+                                    <!-- END:.payment-card__number-fields -->
                                 </div>
-                                <!-- END:.payment-card__number-fields -->
-                            </div>
-                            <!-- END:.payment-card__number -->
-                            <!-- .payment-card__expires -->
-                            <div class="payment-card__expires payment-card__element">
-                                <!-- .payment-card__expires-inner -->
-                                <div class="payment-card__expires-inner">
-                                    <!-- payment-card__expires-label -->
-                                    <div class="payment-card__expires-label">
-                                        <span>Valid</span>
-                                        <br />
-                                        <span>Thru</span>
+                                <!-- END:.payment-card__number -->
+                                <!-- .payment-card__expires -->
+                                <div class="payment-card__expires payment-card__element">
+                                    <!-- .payment-card__expires-inner -->
+                                    <div class="payment-card__expires-inner">
+                                        <!-- payment-card__expires-label -->
+                                        <div class="payment-card__expires-label">
+                                            <span>Valid</span>
+                                            <br />
+                                            <span>Thru</span>
+                                        </div>
+                                        <!-- END:payment-card__expires-label -->
+                                        <!-- .payment-card__expires-date -->
+                                        <div class="payment-card__expires-date">
+                                            <input type="text" class="payment-card__expires-date-field payment-card__tabfield" maxlength="2" tabindex="5" placeholder="01" />
+                                            <span class="payment-card__expires-separator">/</span>
+                                            <input type="text" class="payment-card__expires-date-field payment-card__tabfield" maxlength="2" tabindex="6" placeholder="14" />
+                                        </div>
+                                        <!-- END:.payment-card__expires-date -->
                                     </div>
-                                    <!-- END:payment-card__expires-label -->
-                                    <!-- .payment-card__expires-date -->
-                                    <div class="payment-card__expires-date">
-                                        <input type="text" class="payment-card__expires-date-field payment-card__tabfield" maxlength="2" tabindex="5" placeholder="01" />
-                                        <span class="payment-card__expires-separator">/</span>
-                                        <input type="text" class="payment-card__expires-date-field payment-card__tabfield" maxlength="2" tabindex="6" placeholder="14" />
-                                    </div>
-                                    <!-- END:.payment-card__expires-date -->
+                                    <!-- END:.payment-card__expires-inner -->
                                 </div>
-                                <!-- END:.payment-card__expires-inner -->
+                                <!-- END:.payment-card__expires -->
+                                <!-- .payment-card__owner -->
+                                <div class="payment-card__owner payment-card__element">
+                                    <input type="text" class="payment-card__owner-field payment-card__tabfield" tabindex="8" placeholder="IVAN IVANOV" />
+                                    <div class="payment-card__owner-tooltip">Недопустимый символ</div>
+                                </div>
+                                <!-- END:.payment-card__owner -->
                             </div>
-                            <!-- END:.payment-card__expires -->
-                            <!-- .payment-card__owner -->
-                            <div class="payment-card__owner payment-card__element">
-                                <input type="text" class="payment-card__owner-field payment-card__tabfield" tabindex="8" placeholder="IVAN IVANOV" />
-                                <div class="payment-card__owner-tooltip">Недопустимый символ</div>
+                            <!-- END:.payment-card__back .payment-card__side -->
+                            <!-- .payment-card__back payment-card__side -->
+                            <div class="payment-card__back payment-card__side">
+                                <div class="payment-card__magnet-line"></div>
+                                <!-- .payment-card__back-wrap -->
+                                <div class="payment-card__back-wrap">
+                                    <!-- .payment-card__cvv -->
+                                    <div class="payment-card__cvv">
+                                        <!-- .payment-card__cvv-label -->
+                                        <div class="payment-card__cvv-label">
+                                            <span class="payment-card__cvv-text">cvc/cvv</span>
+                                            <span class="info">?</span>
+                                        </div>
+                                        <!-- END:.payment-card__cvv-label -->
+                                        <!-- .payment-card__cvv-field-wrap -->
+                                        <div class="payment-card__cvv-field-wrap">
+                                            <input type="password" class="payment-card__cvv-field payment-card__tabfield" maxlength="3" tabindex="7" />
+                                        </div>
+                                        <!-- END:.payment-card__cvv-field-wrap -->
+                                        <!-- .payment-card__cvv-note -->
+                                        <div class="payment-card__cvv-note">
+                                            Последние
+                                            <br>три цифры на обороте
+                                            <br>карты
+                                        </div>
+                                        <!-- END:.payment-card__cvv-note -->
+                                    </div>
+                                    <!-- END:.payment-card__cvv -->
+                                </div>
+                                <!-- END:.payment-card__back-wrap -->
                             </div>
-                            <!-- END:.payment-card__owner -->
+                            <!-- END:.payment-card__back payment-card__side -->
                         </div>
-                        <!-- END:.payment-card__back .payment-card__side -->
-                        <!-- .payment-card__back payment-card__side -->
-                        <div class="payment-card__back payment-card__side">
-                            <div class="payment-card__magnet-line"></div>
-                            <!-- .payment-card__back-wrap -->
-                            <div class="payment-card__back-wrap">
-                                <!-- .payment-card__cvv -->
-                                <div class="payment-card__cvv">
-                                    <!-- .payment-card__cvv-label -->
-                                    <div class="payment-card__cvv-label">
-                                        <span class="payment-card__cvv-text">cvc/cvv</span>
-                                        <span class="info">?</span>
-                                    </div>
-                                    <!-- END:.payment-card__cvv-label -->
-                                    <!-- .payment-card__cvv-field-wrap -->
-                                    <div class="payment-card__cvv-field-wrap">
-                                        <input type="password" class="payment-card__cvv-field payment-card__tabfield" maxlength="3" tabindex="7" />
-                                    </div>
-                                    <!-- END:.payment-card__cvv-field-wrap -->
-                                    <!-- .payment-card__cvv-note -->
-                                    <div class="payment-card__cvv-note">
-                                        Последние
-                                        <br>три цифры на обороте
-                                        <br>карты
-                                    </div>
-                                    <!-- END:.payment-card__cvv-note -->
-                                </div>
-                                <!-- END:.payment-card__cvv -->
-                            </div>
-                            <!-- END:.payment-card__back-wrap -->
-                        </div>
-                        <!-- END:.payment-card__back payment-card__side -->
+                        <!-- END:.payment-card__inner -->
                     </div>
-                    <!-- END:.payment-card__inner -->
-                </div>
-                <!-- END:.payment-card -->
-                <!-- .payment-add-fields -->
-                <div class="payment-add-fields">
-                    <!-- .payment-add-fields__inner -->
-                    <div class="payment-add-fields__inner">
-                        <div class="payment-add-field__wrapper">
-                            <!-- payment-add-fields__element -->
-                            <div class="payment-add-fields__element">
-                                <input type="text" class="payment-add-fields__field payment-card__owner-field payment-card__tabfield" tabindex="9" placeholder="Введите ваш Email">
-                                <div class="payment-card__owner-tooltip">Недопустимый символ</div>
+                    <!-- END:.payment-card -->
+                    <!-- .payment-add-fields -->
+                    <div class="payment-add-fields">
+                        <!-- .payment-add-fields__inner -->
+                        <div class="payment-add-fields__inner">
+                            <div class="payment-add-field__wrapper">
+                                <!-- payment-add-fields__element -->
+                                <div class="payment-add-fields__element">
+                                    <input type="text" class="payment-add-fields__field payment-card__owner-field payment-card__tabfield" tabindex="9" placeholder="Введите ваш Email">
+                                    <div class="payment-card__owner-tooltip">Недопустимый символ</div>
+                                </div>
+                                <!-- END:payment-add-fields__element -->
+                                <!-- payment-add-fields__element -->
+                                <div class="payment-add-fields__element">
+                                    <input type="text" class="payment-add-fields__field payment-card__owner-field payment-card__tabfield" tabindex="10" placeholder="Введите ваш телефон">
+                                    <div class="payment-card__owner-tooltip">Недопустимый символ</div>
+                                </div>
+                                <!-- END:payment-add-fields__element -->
                             </div>
-                            <!-- END:payment-add-fields__element -->
-                            <!-- payment-add-fields__element -->
-                            <div class="payment-add-fields__element">
-                                <input type="text" class="payment-add-fields__field payment-card__owner-field payment-card__tabfield" tabindex="10" placeholder="Введите ваш телефон">
-                                <div class="payment-card__owner-tooltip">Недопустимый символ</div>
-                            </div>
-                            <!-- END:payment-add-fields__element -->
                         </div>
+                        <!-- END:.payment-add-fields__inner -->
                     </div>
-                    <!-- END:.payment-add-fields__inner -->
+                    <!-- END:.payment-add-fields -->
                 </div>
-                <!-- END:.payment-add-fields -->
+                <!-- END:.popup__dynamic-area -->
             </div>
             <!-- END:.popup-main__main-content -->
             <!-- .popup__footer -->
