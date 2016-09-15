@@ -138,13 +138,28 @@
     &-payment {
         &__title-cell {
             width: 80%;
+            @media screen and (max-width: 900px) {
+                display: block;
+                width: auto;
+            }
         }
         &__timer-cell {
             width: 10%;
             line-height: 34px;
             vertical-align: middle;
+            @media screen and (max-width: 900px) {
+                display: block;
+                width: auto;
+                text-align: center;
+            }
         }
         &__title {
+            @media screen and (max-width: 900px) {
+                margin-bottom: 15px;
+            }
+            @media screen and (max-width: 550px) {
+                font-size: 25px;
+            }
             &-price {
                 &-value {
                     font-weight: normal;
@@ -154,6 +169,10 @@
     }
     &__empty-leftcell {
         width: 10%;
+        @media screen and (max-width: 900px) {
+            display: block;
+            width: auto;
+        }
     }
     &__footer {
         // position: static;
@@ -256,8 +275,16 @@
             }
         }
         &__expires {
+            margin-right: 8px;
             &-inner {
                 float: none;
+            }
+            &-date {
+                &-field {
+                    @media screen and (max-width: 550px) {
+                        font-size: 15px;
+                    }
+                }
             }
         }
         &__back {
@@ -265,6 +292,14 @@
             width: 100%;
         }
         &__field {
+            @media screen and (max-width: 550px) {
+                font-size: 15px;
+            }
+            &-wrapper {
+                @media screen and (max-width: 550px) {
+                    width: 51.6px;
+                }
+            }
             &-title {
                 font-size: 17px;
                 font-weight: normal;
@@ -286,8 +321,16 @@
         &__cvv {
             display: inline-block;
             vertical-align: middle;
-            &-field{
+            @media screen and (max-width: 550px) {
+                display: block;
+            }
+            &-field {
+                width: 142px;
                 margin-bottom: 0;
+                @media screen and (max-width: 550px) {
+                    width: 100%;
+                    font-size: 15px;
+                }
             }
         }
     }

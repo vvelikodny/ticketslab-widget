@@ -261,10 +261,37 @@
     width: 80%;
 }
 
+@media screen and (max-width: 900px) {
+    .popup-payment__title-cell {
+        display: block;
+        width: auto;
+    }
+}
+
 .popup-payment__timer-cell {
     line-height: 34px;
     width: 10%;
     vertical-align: middle;
+}
+
+@media screen and (max-width: 900px) {
+    .popup-payment__timer-cell {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .popup-payment__title {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .popup-payment__title {
+        font-size: 25px;
+    }
 }
 
 .popup-payment__title-price-value {
@@ -273,6 +300,13 @@
 
 .popup__empty-leftcell {
     width: 10%;
+}
+
+@media screen and (max-width: 900px) {
+    .popup__empty-leftcell {
+        display: block;
+        width: auto;
+    }
 }
 
 .popup__footer-btn {
@@ -381,13 +415,35 @@
     text-align: left;
 }
 
+.payment-card__expires {
+    margin-right: 8px;
+}
+
 .payment-card__expires-inner {
     float: none;
+}
+
+@media screen and (max-width: 550px) {
+    .payment-card__expires-date-field {
+        font-size: 15px;
+    }
 }
 
 .payment-card__back {
     float: none;
     width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+    .payment-card__field {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .payment-card__field-wrapper {
+        width: 51.6px;
+    }
 }
 
 .payment-card__field-title {
@@ -413,8 +469,22 @@
     vertical-align: middle;
 }
 
+@media screen and (max-width: 550px) {
+    .payment-card__cvv {
+        display: block;
+    }
+}
+
 .payment-card__cvv-field {
+    width: 142px;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 550px) {
+    .payment-card__cvv-field {
+        font-size: 15px;
+        width: 100%;
+    }
 }
 
 .payment-add-fields__inner {
