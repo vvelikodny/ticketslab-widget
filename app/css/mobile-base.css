@@ -257,7 +257,7 @@
     }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 765px) {
     .popup-payment__form {
         height: auto;
     }
@@ -290,7 +290,7 @@
 
 @media screen and (max-width: 900px) {
     .popup-payment__title {
-        margin-bottom: 15px;
+        margin-bottom: 8px;
     }
 }
 
@@ -320,7 +320,7 @@
     display: block;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 765px) {
     .popup__footer--payment-mobile {
         position: static;
     }

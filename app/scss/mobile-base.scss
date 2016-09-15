@@ -137,7 +137,7 @@
     }
     &-payment {
         &__form {
-            @media screen and (max-width: 770px) {
+            @media screen and (max-width: 765px) {
                 height: auto;
             }
         }
@@ -160,7 +160,7 @@
         }
         &__title {
             @media screen and (max-width: 900px) {
-                margin-bottom: 15px;
+                margin-bottom: 8px;
             }
             @media screen and (max-width: 550px) {
                 font-size: 25px;
@@ -188,7 +188,7 @@
         &-submit-btn {
             @extend %default-btn-mobile;
         }
-        @media screen and (max-width: 770px) {
+        @media screen and (max-width: 765px) {
             &--payment-mobile {
                 position: static;
             }
