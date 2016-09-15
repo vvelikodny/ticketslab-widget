@@ -92,6 +92,9 @@ body {
             border: none;
             outline: none;
         }
+        input.default-input-number {
+            height: 100%;
+        }
         .jq-number {
             padding: 0 38px;
             &.focused {

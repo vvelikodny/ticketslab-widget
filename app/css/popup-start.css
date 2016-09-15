@@ -192,6 +192,10 @@ body {
     outline: none;
 }
 
+.popup-tickets__offer input.default-input-number {
+    height: 100%;
+}
+
 .popup-tickets__offer .jq-number {
     padding: 0 38px;
 }
