@@ -46,6 +46,9 @@
             }
         }
         &__main-content {
+            &.static {
+                height: auto;
+            }
             @media screen and (max-width: 765px) {
                 height: auto;
             }
@@ -181,6 +184,9 @@
         }
     }
     &__footer {
+        &.static {
+            position: static;
+        }
         @media screen and (max-width: 765px) {
             position: static;
         }
@@ -322,6 +328,8 @@
             }
         }
         &__owner {
+            padding-bottom: 24px;
+            border-bottom: 1px solid #a59d9d;
             &-field {
                 font-size: 15px;
             }

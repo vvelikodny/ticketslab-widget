@@ -154,6 +154,10 @@
     background: none;
 }
 
+.popup-main__main-content.static {
+    height: auto;
+}
+
 @media screen and (max-width: 765px) {
     .popup-main__main-content {
         height: auto;
@@ -316,6 +320,10 @@
     }
 }
 
+.popup__footer.static {
+    position: static;
+}
+
 @media screen and (max-width: 765px) {
     .popup__footer {
         position: static;
@@ -472,6 +480,11 @@
     margin-bottom: 16px;
     padding: 0;
     color: #534e4e;
+}
+
+.payment-card__owner {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #a59d9d;
 }
 
 .payment-card__owner-field {
