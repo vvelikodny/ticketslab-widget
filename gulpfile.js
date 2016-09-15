@@ -71,10 +71,10 @@ gulp.task('dist', function(){
 	.pipe(useref())
 	.pipe(gulpif('*.css', prettify()))
 	.pipe(gulpif('*.js', prettify()))
-	// .pipe(gulpif('*.css', minifyCSS()))
-	// .pipe(gulpif('*.js', uglify({
-	// 	mangle: false
-	// })))
+	.pipe(gulpif('*.css', minifyCSS()))
+	.pipe(gulpif('*.js', uglify({
+		mangle: false
+	})))
 	.pipe(gulp.dest('dist/'));
 });
 
