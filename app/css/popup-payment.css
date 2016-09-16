@@ -406,7 +406,7 @@ body {
 
 .card-logos__logo {
     display: inline-block;
-    height: 24px;
+    height: 29px;
     vertical-align: middle;
     background-repeat: no-repeat;
     -webkit-background-size: 100% 100%;
@@ -416,13 +416,14 @@ body {
 }
 
 .card-logos__logo--mastercard {
-    width: 39px;
+    width: 46px;
+    height: 25px;
     margin-right: 12px;
     background-image: url('../img/base/card-logos/mastercard.svg');
 }
 
 .card-logos__logo--visa {
-    width: 63px;
+    width: 76px;
     background-image: url('../img/base/card-logos/visa.svg');
 }
 
