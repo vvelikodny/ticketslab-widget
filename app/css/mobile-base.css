@@ -121,6 +121,10 @@
     }
 }
 
+.popup-main__header {
+    height: auto;
+}
+
 .popup-main__header-back {
     width: 10%;
 }
@@ -319,6 +323,10 @@
         display: block;
         width: auto;
     }
+}
+
+.popup__footer {
+    height: auto;
 }
 
 .popup__footer.static {

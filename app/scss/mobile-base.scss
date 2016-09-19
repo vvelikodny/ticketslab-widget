@@ -17,6 +17,7 @@
     }
     &-main {
         &__header {
+            height: auto;
             &-back {
                 width: 10%;
             }
@@ -185,6 +186,7 @@
         }
     }
     &__footer {
+        height: auto;
         &.static {
             position: static;
         }

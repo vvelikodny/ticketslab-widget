@@ -245,21 +245,23 @@ body {
     background: #fff;
 }
 
+@media screen and (max-height: 900px) {
+    .popup__container {
+        height: 98%;
+    }
+}
+
 .popup__dynamic-area {
     overflow: auto;
-    height: 67%;
+    height: -webkit-calc(100% - 200px);
+    height: -moz-calc(100% - 200px);
+    height: calc(100% - 200px);
 }
 
-@media screen and (max-height: 450px) {
-    .popup__dynamic-area {
-        height: 32%;
-    }
-}
-
-@media screen and (max-height: 300px) {
-    .popup__dynamic-area {
-        height: 20%;
-    }
+.popup__dynamic-area--payment {
+    height: -webkit-calc(100% - 211px);
+    height: -moz-calc(100% - 211px);
+    height: calc(100% - 211px);
 }
 
 .popup__table {
@@ -270,6 +272,10 @@ body {
 
 .popup__table--bordered {
     border-bottom: 1px solid #e5e5e5;
+}
+
+.popup__table--bordered:last-child {
+    border-bottom: none;
 }
 
 .popup__table--bordered-top {
@@ -310,6 +316,10 @@ body {
     left: 0;
     width: 100%;
     background-color: #fff;
+}
+
+.popup__footer--payment {
+    height: auto;
 }
 
 .popup__footer-price {

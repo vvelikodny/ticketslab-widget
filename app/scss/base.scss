@@ -37,6 +37,9 @@ body {
     @extend %default-iframe-overlay;
     &-main {
         height: 100%;
+        &__header {
+            height: gridValue('popupHeaderHeight');
+        }
         &__main-content {
             height: 100%;
         }
@@ -60,15 +63,15 @@ body {
         background: #fff;
 
         @extend %translate-xy;
+        @media screen and (max-height: 900px){
+            height: 98%;
+        }
     }
     &__dynamic-area {
         overflow: auto;
-        height: gridValue('popupDynamicAreaHeight');
-        @media screen and (max-height: 450px) {
-            height: 32%;
-        }
-        @media screen and (max-height: 300px) {
-            height: 20%;
+        height: calc(100% - 200px);
+        &--payment{
+            height: calc(100% - 211px);
         }
     }
     &__table {
@@ -77,6 +80,9 @@ body {
         padding: 18px 32px;
         &--bordered {
             border-bottom: 1px solid #e5e5e5;
+            &:last-child {
+                border-bottom: none;
+            }
         }
         &--bordered-top {
             border-top: 1px solid #e5e5e5;
@@ -111,7 +117,11 @@ body {
         bottom: 0;
         z-index: 1;
         width: 100%;
+        height: gridValue('popupFooterHeight');
         background-color: #fff;
+        &--payment {
+            height: auto;
+        }
         &-price {
             display: inline-block;
             font-size: 24px;
