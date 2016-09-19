@@ -227,12 +227,6 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    .popup-tickets__title {
-        font-size: 14px;
-    }
-}
-
 .popup-tickets__subtitle {
     margin-bottom: 15px;
 }
@@ -273,14 +267,15 @@
 
 @media screen and (max-width: 900px) {
     .popup-payment__title-cell {
-        display: block;
         width: auto;
+        text-align: left;
     }
 }
 
 .popup-payment__timer-cell {
     line-height: 34px;
     width: 10%;
+    text-align: right;
     vertical-align: middle;
 }
 
@@ -288,20 +283,26 @@
     .popup-payment__timer-cell {
         display: block;
         width: auto;
-        text-align: center;
+        text-align: right;
     }
 }
 
 @media screen and (max-width: 900px) {
     .popup-payment__title {
-        margin-bottom: 8px;
+        font-size: 22px;
     }
 }
 
 @media screen and (max-width: 550px) {
     .popup-payment__title {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .popup-payment__title {
+        font-size: 18px;
     }
 }
 
@@ -409,10 +410,22 @@
     vertical-align: middle;
 }
 
+@media screen and (max-width: 460px) {
+    .pay-timer-mobile__icon {
+        width: 15px;
+    }
+}
+
 .pay-timer-mobile__numbers {
     font-size: 18px;
     display: inline-block;
     vertical-align: middle;
+}
+
+@media screen and (max-width: 460px) {
+    .pay-timer-mobile__numbers {
+        font-size: 16px;
+    }
 }
 
 .pay-timer-mobile__numbers--warning {
@@ -436,6 +449,12 @@
 
 .payment-card__front {
     width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .payment-card__front {
+        padding: 15px 16px;
+    }
 }
 
 .payment-card__number-fields {
@@ -503,7 +522,7 @@
 
 @media screen and (max-width: 550px) {
     .payment-card__cvv {
-        display: block;
+        width: 77px;
     }
 }
 

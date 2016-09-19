@@ -113,9 +113,6 @@
                 font-size: 16px;
                 line-height: 23px;
             }
-            @media screen and (max-width: 400px) {
-                font-size: 14px;
-            }
         }
         &__subtitle {
             margin-bottom: 15px;
@@ -147,27 +144,31 @@
         &__title-cell {
             width: 80%;
             @media screen and (max-width: 900px) {
-                display: block;
                 width: auto;
+                text-align: left;
             }
         }
         &__timer-cell {
             width: 10%;
             line-height: 34px;
+            text-align: right;
             vertical-align: middle;
             @media screen and (max-width: 900px) {
                 display: block;
                 width: auto;
-                text-align: center;
+                text-align: right;
             }
         }
         &__title {
             @media screen and (max-width: 900px) {
-                margin-bottom: 8px;
+                font-size: 22px;
             }
             @media screen and (max-width: 550px) {
-                font-size: 25px;
+                font-size: 20px;
                 margin-bottom: 5px;
+            }
+            @media screen and (max-width: 360px) {
+                font-size: 18px;
             }
             &-price {
                 &-value {
@@ -261,11 +262,17 @@
         display: inline-block;
         margin-right: 5px;
         vertical-align: middle;
+        @media screen and (max-width: 460px) {
+            width: 15px;
+        }
     }
     &__numbers {
         display: inline-block;
         font-size: 18px;
         vertical-align: middle;
+        @media screen and (max-width: 460px) {
+            font-size: 16px;
+        }
         &--warning {
             color: color('warning');
         }
@@ -286,6 +293,9 @@
         }
         &__front {
             width: 100%;
+            @media screen and (max-width: 650px) {
+                padding: 15px 16px;
+            }
         }
         &__number {
             &-fields {
@@ -342,7 +352,7 @@
             display: inline-block;
             vertical-align: middle;
             @media screen and (max-width: 550px) {
-                display: block;
+                width: 77px;
             }
             &-field {
                 width: 142px;
