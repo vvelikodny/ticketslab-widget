@@ -15,11 +15,14 @@ body {
         color: #666;
     }
     &__title {
+        overflow: hidden;
+        max-width: 350px;
         font-size: 27px;
         font-weight: bold;
         line-height: 34px;
         margin-bottom: 0;
         white-space: nowrap;
+        text-overflow: ellipsis;
         color: #333;
     }
     &__address {

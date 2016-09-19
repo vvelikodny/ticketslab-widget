@@ -240,14 +240,14 @@ body {
     display: block;
     overflow: hidden;
     width: 848px;
-    height: 66.52935%;
+    height: 80%;
     padding: 0;
     background: #fff;
 }
 
 .popup__dynamic-area {
     overflow: auto;
-    height: 52%;
+    height: 67%;
 }
 
 @media screen and (max-height: 450px) {
@@ -294,6 +294,13 @@ body {
 
 .popup__cell--right {
     text-align: right;
+}
+
+.popup__cell--bandtitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
 }
 
 .popup__footer {

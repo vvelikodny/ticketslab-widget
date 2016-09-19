@@ -105,9 +105,13 @@ body {
     font-size: 27px;
     font-weight: bold;
     line-height: 34px;
+    overflow: hidden;
+    max-width: 350px;
     margin-bottom: 0;
     white-space: nowrap;
+    text-overflow: ellipsis;
     color: #333;
+    -o-text-overflow: ellipsis;
 }
 
 .popup-start__address {
