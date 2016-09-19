@@ -438,7 +438,13 @@ body {
 }
 
 .payment-add-fields__element {
-    margin-bottom: 17px;
+    display: inline-block;
+    width: 48.6%;
+    margin-right: 2%;
+}
+
+.payment-add-fields__element:last-child {
+    margin-right: 0;
 }
 
 .payment-add-fields__field {

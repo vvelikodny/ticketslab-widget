@@ -247,7 +247,7 @@ body {
 
 @media screen and (max-height: 900px) {
     .popup__container {
-        height: 98%;
+        height: 92%;
     }
 }
 
