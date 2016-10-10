@@ -5,16 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0">
     <title>TicketsLab</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/base/favicon.ico" />
-    <!-- vendor -->
-    <link rel="stylesheet" href="./vendor/jquery.formstyler/jquery.formstyler.css">
-    <!-- END:vendor -->
     <!-- build:css css/bundle.css -->
-    <link rel="stylesheet" href="./css/assets.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/start-page.css">
-    <link rel="stylesheet" href="./css/popup-start.css">
-    <link rel="stylesheet" href="./css/popup-payment.css">
     <!-- endbuild -->
 </head>
 
@@ -24,18 +16,16 @@
         <main class="main main-desktop start-page">
             <!-- .btn-block -->
             <div class="btn-block" style="margin: 50px 50px">
-                <button type="button" id="startBtn" class="primary-btn">Купить билеты</button>
+                <button type="button" class="primary-btn" data-tl-event="1">Купить билеты</button>
             </div>
             <!-- END:.btn-block -->
-            <!-- .start-popup -->
-            <div id="startPopup" class="popup start-popup">
-                <!--.popup__container-->
-                <div class="popup__container">
-                    <iframe src="start-popup.html" frameborder="0" class="popup__iframe"></iframe>
-                </div>
-                <!--END:.popup__container-->
+
+            <!-- .btn-block -->
+            <div class="btn-block" style="margin: 50px 50px">
+                <button type="button" class="primary-btn" data-tl-event="2">Купить билеты</button>
             </div>
-            <!-- END:.start-popup -->
+            <!-- END:.btn-block -->
+
             <!-- .payment-popup -->
             <!-- <div id="paymentPopup" class="popup payment-popup">
         .popup__container
@@ -50,10 +40,9 @@
     <!-- END:wrapper -->
     <!-- vendor -->
     <script src="./vendor/jquery-2.2.4/jquery-2.2.4.js"></script>
-    <script src="./vendor/jquery.formstyler/jquery.formstyler.js"></script>
     <!-- END:vendor -->
     <!-- build:js js/bundle.js -->
-    <script src="./js/main.js"></script>
+    <script src="./js/loader.js"></script>
     <!-- endbuild -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
